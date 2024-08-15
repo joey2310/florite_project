@@ -1,0 +1,60 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Login;
+use App\Models\Maindata;
+
+
+class userController extends Controller
+{    
+    function addData(Request $req){
+        $login = new login;
+        $login->username=$req->username;
+        $login->email=$req->email;
+        $login->password=$req->password;
+        $login->save();
+        return redirect('users');
+    }
+
+    function homeData(Request $req){
+        // dd($req->all());
+        try{
+            $client = new Maindata();
+            $client->clientName=$req->clientName;
+            $client->location=$req->location;
+            $client->contactName=$req->contactName;
+            $client->email=$req->email;
+            $client->contactNo=$req->contactNo;
+            $client->q1p=$req->q1p;
+            $client->q1pDate=$req->q1pDate;
+            $client->gemNo=$req->gemNo;
+            $client->gemDate=$req->gemDate;
+            $client->docNo=$req->docNo;
+            $client->docDate=$req->docDate;
+            $client->prepby=$req->prepby;
+            $client->checkby=$req->checkby;
+            $client->appby=$req->appby;
+            $client->date=$req->date;
+            $client->pumpModel=$req->pumpModel;
+            $client->liquid=$req->liquid;
+            $client->spGr=$req->spGr;
+            $client->temp=$req->temp;
+            $client->qty=$req->qty;
+            $client->capacity=$req->capacity;
+            $client->head=$req->head;
+            $client->sucLift=$req->sucLift;
+            $client->npsha=$req->npsha;
+            $client->npsha=$req->npsha;
+            $client->npshr=$req->npshr;
+            $client->seal=$req->seal;
+            $client->save();
+            return redirect('home');
+        }
+        catch(\Exception $e){
+            return $e->getMessage();
+        } 
+    }
+}
