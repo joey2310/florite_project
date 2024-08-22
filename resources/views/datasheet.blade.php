@@ -50,7 +50,7 @@
         <div class="row border border-dark border-3">
             <div class="col-3">
                 <h6>To.</h6>
-                <p><strong>Client</strong> {{ $data->location }}</p>
+                <p><strong>Client</strong> {{ $data->clientName }}</p>
                 <p><strong>Location:</strong> {{ $data->location }}</p>
                 <p><strong>Contact Name:</strong> {{ $data->contactName }}</p>
                 <p><strong>Email:</strong> {{ $data->email }}</p>
