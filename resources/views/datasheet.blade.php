@@ -48,13 +48,81 @@
             </h4>
         </div>
         <div class="row border border-dark border-3">
-            <div class="col-3">
-                <h6>To.</h6>
-                <p><strong>Client</strong> {{ $data->clientName }}</p>
-                <p><strong>Location:</strong> {{ $data->location }}</p>
-                <p><strong>Contact Name:</strong> {{ $data->contactName }}</p>
-                <p><strong>Email:</strong> {{ $data->email }}</p>
-                <p><strong>Contact No:</strong> {{ $data->contactNo }}</p>
+            <div class="col-8">
+                <table>
+                    <tr>
+                        <td>To,</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Client:</td>
+                        <td>{{ $data->clientName }}</td>
+                    </tr>
+                    <tr>
+                        <td>Location:</td>
+                        <td>{{ $data->location }}</td>
+                    </tr>
+                    <tr>
+                        <td>Name:</td>
+                        <td>{{ $data->contactName }}</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>{{ $data->email }}</td>
+                    </tr>
+                    <tr>
+                        <td>Contact No:</td>
+                        <td>{{ $data->contactNo }}</td>
+                    </tr>
+                    <tr>
+                        <td>Performance:</td>
+                        <td>{{ $data->capacity}}LPM, {{ $data->head}}Meters</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4">
+                <table class="table table-bordered">
+                    <tr>
+                        <td>GEM No:</td>
+                        <td>{{ $data->gemNo }}</td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td>{{ $data->gemDate }}</td>
+                    </tr>
+                    <tr>
+                        <td>Ref No:</td>
+                        <td>{{ $data->q1p }}</td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td>{{ $data->q1pDate }}</td>
+                    </tr>
+                    <tr>
+                        <td>Document:</td>
+                        <td>{{ $data->docNo }}</td>
+                    </tr>
+                </table>
+                <table class="table table-bordered table table-sm text-center">
+                    <tr>
+                        <td>Prepared By</td>
+                        <td class="text-uppercase">{{ $data->prepby }}</td>
+                        <td>Date</td>
+                        <td>{{ $data->date }}</td>
+                    </tr>
+                    <tr>
+                        <td>Checked By</td>
+                        <td class="text-uppercase">{{ $data->checkby }}</td>
+                        <td>Date</td>
+                        <td>{{ $data->date }}</td>
+                    </tr>
+                    <tr>
+                        <td>Approved By</td>
+                        <td class="text-uppercase">{{ $data->appby }}</td>
+                        <td>Date</td>
+                        <td>{{ $data->date }}</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
