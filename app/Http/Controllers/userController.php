@@ -47,7 +47,6 @@ class userController extends Controller
             $client->head=$req->head;
             $client->sucLift=$req->sucLift;
             $client->npsha=$req->npsha;
-            $client->npsha=$req->npsha;
             $client->npshr=$req->npshr;
             $client->seal=$req->seal;
             $client->save();
@@ -56,5 +55,10 @@ class userController extends Controller
         catch(\Exception $e){
             return $e->getMessage();
         } 
+    }
+
+    function show(){
+        $data= Maindata::all();
+        return view('list',['maindata'=>$data]);
     }
 }

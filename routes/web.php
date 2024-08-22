@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\dsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\userController;
@@ -16,3 +17,6 @@ Route::get('/users', [homeController::class, 'users'])->name('users');
 
 Route::post('/users', [userController::class, 'addData']);
 Route::post('/home', [userController::class, 'homeData']);
+Route::get('/list', [userController::class, 'show'])->name('list');
+
+Route::get('/datasheet/{id}', [dsController::class, 'show'])->name('datasheet.show');

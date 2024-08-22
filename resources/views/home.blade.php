@@ -24,7 +24,7 @@
                 <a href="{{ route('apids') }}" class="btn btn-primary"> API Datasheet</a>
                 <a href="{{ route('gad') }}" class="btn btn-primary">GAD</a>
                 <a href="{{ route('users') }}" class="btn btn-primary">Users</a>
-                <a href="" class="btn btn-primary">Back</a>
+                <a href="{{ route('list') }}" class="btn btn-primary">List</a>
             </div>
             <div class="m-3 border border-black p-3">
                 <h3>Please Fill Client Details</h3>
@@ -34,7 +34,7 @@
                         <input type="text" class="form-control" id="clientName" name="clientName">
                     </div>
                     <div class="mb-1 col">
-                        <label for="email" class="form-label">Location</label>
+                        <label for="location" class="form-label">Location</label>
                         <input type="text" class="form-control" id="location" name="location">
                     </div>
                     <div class="mb-1 col">
@@ -63,7 +63,7 @@
                         <label for="gemNo" class="form-label">GEM No.</label>
                         <input type="text" class="form-control" id="gemNo" name="gemNo">
                     </div>
-                    <div class="mb-1 col">
+                    <div class="mb-1 col">  
                         <label for="gemDate" class="form-label">Date</label>
                         <input type="date" class="form-control" id="gemDate" name="gemDate">
                     </div>
@@ -78,7 +78,7 @@
                         <input type="date" class="form-control" id="docDate" name="docDate">
                     </div>
                     <div class="mb-1 col">
-                        <label for="message" class="form-label">Prepared By</label>
+                        <label for="prepby" class="form-label">Prepared By</label>
                         <select id="prepby" name="prepby" class="form-control">
                             <option value="">--Please choose an option--</option>
                             <option value="pb">P.B</option>
@@ -89,7 +89,7 @@
                         </select>
                     </div>
                     <div class="mb-1 col">
-                        <label for="message" class="form-label">Checked By</label>
+                        <label for="checkby" class="form-label">Checked By</label>
                         <select id="checkby" name="checkby" class="form-control">
                             <option value="">--Please choose an option--</option>
                             <option value="pb">P.B</option>
@@ -185,7 +185,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

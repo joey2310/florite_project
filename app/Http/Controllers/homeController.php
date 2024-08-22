@@ -31,4 +31,8 @@ class homeController extends Controller
     {
         return view('users');
     }
+    public function list()
+    {
+        return view('list');
+    }
   }
