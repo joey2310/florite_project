@@ -16,7 +16,7 @@ class userController extends Controller
         $login->email=$req->email;
         $login->password=$req->password;
         $login->save();
-        return redirect('users');
+        return redirect('list');
     }
 
     function homeData(Request $req){

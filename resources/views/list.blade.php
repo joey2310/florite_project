@@ -9,23 +9,23 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="fs-1">
-        <h1>List from DB</h1>
-        <h3 class="text-primary m-3">Welcome to FLO-RITE ENGINEERING CORPORATION LTD.</h3>
-        <a href="{{ route('ds') }}" class="btn btn-outline-success">Datasheet</a>
-        <a href="{{ route('apids') }}" class="btn btn-outline-success">API Datasheet</a>
-        <a href="{{ route('gad') }}" class="btn btn-outline-success">GAD</a>
-        <a href="{{ route('users') }}" class="btn btn-outline-success">Users</a>
-        <a href="{{ route('list') }}" class="btn btn-outline-success">List</a>
-        <a href="{{ route('home') }}" class="btn btn-outline-success">Back</a>
+    <div class="row">
+        <div class="fs-1 col-auto">
+            <h3 class="text-primary m-3">Welcome to FLO-RITE ENGINEERING CORPORATION LTD.</h3>
+        </div>
+        <div class="fs-1 col-auto">
+            <a href="{{ route('home') }}" class="btn btn-outline-success">Back</a>
+        </div>
     </div>
     <div>
         <table class="table table-dark table-striped table-bordered text-center">
             <thead>
                 <tr>
+                    <th colspan="3">Actions</th>
                     <th>Sr.No.</th>
                     <th>Client</th>
                     <th>Location</th>
@@ -53,14 +53,15 @@
                     <th>NPSH A</th>
                     <th>NPSH R</th>
                     <th>Seal</th>
-                    <th>View</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach ($maindata as $member)
                 <tr class="table-group-divider">
+                    <td><a href="{{ route('datasheet.show', $member['id']) }}" class="btn btn-primary"><i
+                                class="fa fa-solid fa-eye fa-flip-horizontal" style="color: #2d00b3;"></i></a></td>
+                    <td><a class="btn btn-warning"><i class="fa fa-solid fa-pencil"></i></a></td>
+                    <td><a class="btn btn-danger"><i class="fa fa-solid fa-trash"></i></a></td>
                     <td>{{$member['id']}}</td>
                     <td>{{$member['clientName']}}</td>
                     <td>{{$member['location']}}</td>
@@ -88,9 +89,6 @@
                     <td>{{$member['npsha']}}</td>
                     <td>{{$member['npshr']}}</td>
                     <td>{{$member['seal']}}</td>
-                    <td><a href="{{ route('datasheet.show', $member['id']) }}" class="btn btn-primary btn-sm">View</a></td>
-                    <td><button class="btn btn-warning btn-sm">Edit</button></td>
-                    <td><button class="btn btn-danger btn-sm">Delete</button></td>
                 </tr>
                 @endforeach
             </tbody>

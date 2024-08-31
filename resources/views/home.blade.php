@@ -7,7 +7,6 @@
 
     <title>Florite</title>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -63,7 +62,7 @@
                         <label for="gemNo" class="form-label">GEM No.</label>
                         <input type="text" class="form-control" id="gemNo" name="gemNo">
                     </div>
-                    <div class="mb-1 col">  
+                    <div class="mb-1 col">
                         <label for="gemDate" class="form-label">Date</label>
                         <input type="date" class="form-control" id="gemDate" name="gemDate">
                     </div>
@@ -185,7 +184,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>

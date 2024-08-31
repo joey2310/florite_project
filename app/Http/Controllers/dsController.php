@@ -11,7 +11,7 @@ class dsController extends Controller
     public function show($id)
 {
     // Retrieve the record by ID
-    $data = Maindata::find($id);
+    $data = Maindata::find($id);    
 
     // Check if data exists
     if (!$data) {

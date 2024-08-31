@@ -20,7 +20,8 @@
             <h1 class="text-primary m-5">Florite Engineering Corporation Pvt. Ltd.</h1>
         </div>
         <div class="fs-1">
-            <a href="{{ route('home') }}" class="btn btn-outline-success">Home</a>
+            <a href="{{ route('list') }}" class="btn btn-outline-success">Home</a>
+            <a href="{{ route('users') }}" class="btn btn-outline-success">Login</a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
