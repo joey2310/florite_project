@@ -281,7 +281,7 @@
                     <tr>
                         <td><strong>K.W. absorbed</strong></td>
                         <td>:</td>
-                        <td> {{ round(($data->capacity*$data->head*$data->spGr)/(1.34*45)) }} KW</td>
+                        <td> {{ round(($data->capacity*$data->head*$data->spGr)/(1.34*45*$data->eff),2) }} KW</td>
                     </tr>
                     <tr>
                         <td><strong>Motor RPM</strong></td>
@@ -291,7 +291,7 @@
                     <tr>
                         <td><strong>Motor K. W</strong></td>
                         <td>:</td>
-                        <td>{{ round(($data->capacity*$data->head*$data->spGr)/(1.34*45)) }} KW </td>
+                        <td>{{ round((($data->capacity*$data->head*$data->spGr)/(1.34*45*$data->eff))*1.25,0) }} KW </td>
                     </tr>
                     <tr>
                         <td><strong>Coupling. Type </strong></td>

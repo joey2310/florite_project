@@ -7,18 +7,17 @@ use App\Http\Controllers\userController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/home', [homeController::class, 'home'])->name('home');
-Route::get('/ds', [homeController::class, 'ds'])->name('ds');
-Route::get('/apids', [homeController::class, 'apids'])->name('apids');
-Route::get('/gad', [homeController::class, 'gad'])->name('gad');
+// Route::get('/ds', [homeController::class, 'ds'])->name('ds');
+// Route::get('/apids', [homeController::class, 'apids'])->name('apids');
+// Route::get('/gad', [homeController::class, 'gad'])->name('gad');
 Route::get('/users', [homeController::class, 'users'])->name('users');
-Route::get('/home1', [homeController::class, 'home1'])->name('home1');
-Route::get('/register', [homeController::class, 'register'])->name('register');
+Route::get('/home1', [homeController::class, 'good'])->name('home1');
+// Route::get('/register', [homeController::class, 'register'])->name('register');
 
 Route::post('/users', [userController::class, 'addData']);
 Route::post('/home', [userController::class, 'homeData']);
-Route::get('/list', [userController::class, 'show'])->name('list');
-
+Route::get('/home1', [userController::class, 'show'])->name('home1');
 Route::get('/datasheet/{id}', [dsController::class, 'show'])->name('datasheet.show');

@@ -16,7 +16,7 @@ class userController extends Controller
         $login->email=$req->email;
         $login->password=$req->password;
         $login->save();
-        return redirect('list');
+        return redirect('home1');
     }
 
     function homeData(Request $req){
@@ -41,6 +41,7 @@ class userController extends Controller
             $client->pumpModel=$req->pumpModel;
             $client->liquid=$req->liquid;
             $client->spGr=$req->spGr;
+            $client->eff=$req->eff;
             $client->temp=$req->temp;
             $client->qty=$req->qty;
             $client->capacity=$req->capacity;
@@ -59,6 +60,6 @@ class userController extends Controller
 
     function show(){
         $data= Maindata::all();
-        return view('list',['maindata'=>$data]);
+        return view('home1',['maindata'=>$data]);
     }
 }

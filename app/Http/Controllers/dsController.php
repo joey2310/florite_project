@@ -15,11 +15,10 @@ class dsController extends Controller
 
     // Check if data exists
     if (!$data) {
-        return redirect()->route('list')->with('error', 'Data not found.');
+        return redirect()->route('home1')->with('error', 'Data not found.');
     }
 
     // Pass the data to the view
     return view('datasheet', compact('data'));
 }
-
 }

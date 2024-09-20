@@ -17,26 +17,28 @@
     <div class="text-center py-3">
         <img src="{{ asset('Screenshot 2024-08-20 233127.jpg') }}" alt="logo" width="250" height="100">
     </div>
-    <div class="card py-2" style="width: 20%;">
-        <div class="text-center pt-2">
-            <h1>LOGIN</h1>
-        </div>
-        <div class="text-center py-2">
-            <form action="users" method="POST">
-                @csrf
-                <div class="form-label py-2">
-                    <input type="text" name="username" placeholder="Enter Username" style="width:80%" />
-                </div>
-                <div class="form-label py-2">
-                    <input type="email" name="email" placeholder="Enter EmailID" style="width:80%" />
-                </div>
-                <div class="form-label py-2">
-                    <input type="password" name="password" placeholder="Enter Password" style="width:80%" />
-                </div>
-                <div class="text-center py-2">
-                    <button class="btn btn-dark" type="submit">Login</button>
-                </div>
-            </form>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <div class="card py-2" style="width: 20%;">
+            <div class="text-center pt-2">
+                <h1>LOGIN</h1>
+            </div>
+            <div class="text-center py-2">
+                <form action="users" method="POST">
+                    @csrf
+                    <div class="form-label py-2">
+                        <input type="text" name="username" placeholder="Enter Username" style="width:80%" />
+                    </div>
+                    <div class="form-label py-2">
+                        <input type="email" name="email" placeholder="Enter EmailID" style="width:80%" />
+                    </div>
+                    <div class="form-label py-2">
+                        <input type="password" name="password" placeholder="Enter Password" style="width:80%" />
+                    </div>
+                    <div class="text-center py-2">
+                        <button class="btn btn-dark" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

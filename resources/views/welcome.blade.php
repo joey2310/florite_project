@@ -20,7 +20,7 @@
             <h1 class="text-primary m-5">Florite Engineering Corporation Pvt. Ltd.</h1>
         </div>
         <div class="fs-1">
-            <a href="{{ route('list') }}" class="btn btn-outline-success">Home</a>
+            <a href="{{ route('home1') }}" class="btn btn-outline-success">Home</a>
             <a href="{{ route('users') }}" class="btn btn-outline-success">Login</a>
         </div>
     </div>
