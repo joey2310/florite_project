@@ -38,5 +38,9 @@ class homeController extends Controller
     public function register()
     {
         return view('register');
-  }
+    }
+  public function formula()
+    {
+        return view('formula');
+    }
 }

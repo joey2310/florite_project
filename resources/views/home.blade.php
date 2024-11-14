@@ -131,7 +131,7 @@
                         </div>
                         <div class="mb-1 col">
                             <label for="spGr" class="form-label">Specific Gravity</label>
-                            <input type="number" class="form-control" id="spGr" name="spGr" step="0.01">
+                            <input type="number" class="form-control" id="spGr" name="spGr" step="0.001">
                         </div>
 
                         <div class="mb-1 col">
@@ -176,9 +176,13 @@
                             <label for="seal" class="form-label">Pump Seal</label>
                             <select id="seal" name="seal" class="form-control">
                                 <option value="">--Please choose an option--</option>
-                                <option value="ms4">Mechanical Seal 4th Edition</option>
-                                <option value="ms3">Mechanical Seal 3th Edition</option>
-                                <option value="gp">Gland Packing</option>
+                                <option
+                                    value="Mechanical seal Balanced- Cartridge Type Leak-proof / Eagle Burgmann / Flowserve As per API 682, 4th Edition">
+                                    Mechanical Seal 4th Edition</option>
+                                <option
+                                    value="Mechanical seal Balanced- Cartridge Type Leak-proof / Eagle Burgmann / Flowserve As per API 682, 3th Edition">
+                                    Mechanical Seal 3th Edition</option>
+                                <option value="Gland Packing">Gland Packing</option>
                             </select>
                         </div>
                     </div>

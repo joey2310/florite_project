@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Florite</title>
+    <title>Florite Pumps</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -15,13 +15,24 @@
 </head>
 
 <body>
-    <div class="container text-center">
-        <div class="h-50">
-            <h1 class="text-primary m-5">Florite Engineering Corporation Pvt. Ltd.</h1>
-        </div>
-        <div class="fs-1">
-            <a href="{{ route('home1') }}" class="btn btn-outline-success">Home</a>
-            <a href="{{ route('users') }}" class="btn btn-outline-success">Login</a>
+    <div class="container text-center text-primary fw-bolder">
+        <header>
+            <div class="d-flex row">
+                <div class="text-center m-5 col-1">
+                    <img src="{{ asset('Screenshot 2024-08-20 233127.jpg') }}" alt="logo" width="250" height="100">
+                </div>
+                <div class="col-10" style="margin-top:65px; height: 100px; font-size: 45px;">
+                    Florite Engineering Corporation Pvt. Ltd.
+                </div>
+            </div>
+        </header>
+        <div>
+            <a href="{{ route('home1') }}" class="btn btn-outline-success fs-3"
+                style="height:60px; width:200px; margin: 20px;">Home</a>
+            <a href="{{ route('formula') }}" class="btn btn-outline-success fs-3"
+                style="height:60px; width:200px; margin: 20px;">Formula</a>
+            <a href="{{ route('users') }}" class="btn btn-outline-success fs-3"
+                style="height:60px; width:200px; margin: 20px;">Login</a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

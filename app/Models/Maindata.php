@@ -9,6 +9,6 @@ class Maindata extends Model
 {
     use HasFactory;
     protected $table = 'maindata';
-    protected $fillable = ['clientName','location','contactName','email','contactNo','q1p','q1pDate','gemNo','gemDate','docNo','docDate','prepby','checkby','appby','date','pumpModel','liquid','spGr','temp','qty','capacity','head','sucLift','npsha','npshr','seal'];
+    protected $fillable = ['clientName','location','contactName','email','contactNo','q1p','q1pDate','gemNo','gemDate','docNo','docDate','prepby','checkby','appby','date','pumpModel','liquid','spGr','eff','temp','qty','capacity','head','sucLift','npsha','npshr','seal','abpower'];
     
 }

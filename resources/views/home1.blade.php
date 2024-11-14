@@ -16,8 +16,13 @@
 
 <body>
     <div class="container">
-        <div class="p-3">
-            <h3 class="text-primary text-center">Welcome to FLO-RITE ENGINEERING CORPORATION LTD.</h3>
+        <div class="row">
+            <div class="text-center col-3 mt-3">
+                <img src="{{ asset('Screenshot 2024-08-20 233127.jpg') }}" alt="logo" width="100" height="40">
+            </div>
+            <div class="p-3 col-8">
+                <h3 class="text-primary text-center">Welcome to FLO-RITE ENGINEERING CORPORATION LTD.</h3>
+            </div>
         </div>
         <div class="d-flex justify-content-between pb-2">
             <div class="me-2">
@@ -52,8 +57,49 @@
                 <tbody>
                     @foreach ($maindata as $member)
                     <tr class="table-group-divider">
-                        <td><a href="{{ route('datasheet.show', $member['id']) }}" class="btn btn-primary"><i
+                        <td>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
                                     class="fa fa-solid fa-eye fa-flip-horizontal" style="color: #2d00b3;"></i></a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="m-3">
+                                                <a href="{{ route('datasheet.show', $member['id']) }}"
+                                                    class="btn btn-secondary btn-lg">Summary Datasheet</a>
+                                            </div>
+                                            <div class="m-3">
+                                                <a href="{{ route('apids', $member['id']) }}"
+                                                    class="btn btn-secondary btn-lg">API Datasheet</a>
+                                            </div>
+                                            <div class="m-3">
+                                                <a href="{{ route('gad', $member['id']) }}"
+                                                    class="btn btn-secondary btn-lg">GA Drawing</a>
+                                            </div>
+                                            <div class="m-3">
+                                                <a href="{{ route('gad', $member['id']) }}"
+                                                    class="btn btn-secondary btn-lg">Foundation Drawing</a>
+                                            </div>
+                                            <div class="m-3">
+                                                <a href="{{ route('gad', $member['id']) }}"
+                                                    class="btn btn-secondary btn-lg">Cross-Sectional Drawing</a>
+                                            </div>
+                                            <div class="m-3">
+                                                <a href="{{ route('gad', $member['id']) }}"
+                                                    class="btn btn-secondary btn-lg">QAP</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </td>
                         <td><a class="btn btn-warning"><i class="fa fa-solid fa-pencil"></i></a></td>
                         <td><a class="btn btn-danger"><i class="fa fa-solid fa-trash"></i></a></td>
@@ -75,7 +121,9 @@
                 </tbody>
             </table>
         </div>
+
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
