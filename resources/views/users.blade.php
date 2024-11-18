@@ -13,31 +13,87 @@
 </head>
 
 <body>
-    <h1 class="text-primary m-3 text-center">Welcome to FLO-RITE ENGINEERING CORPORATION LTD</h1>
+    <h1 class="text-primary m-3 text-center">WELCOME to FLO-RITE ENGINEERING CORPORATION LTD</h1>
     <div class="text-center py-3">
         <img src="{{ asset('Screenshot 2024-08-20 233127.jpg') }}" alt="logo" width="250" height="100">
     </div>
-    <div style="display: flex; justify-content: center; align-items: center;">
-        <div class="card py-2" style="width: 20%;">
-            <div class="text-center pt-2">
-                <h1>LOGIN</h1>
+    <div class="d-flex row" style="margin-left:20%; margin-top:6%;">
+        <div class="col-6 ">
+            <div class="card " style="width: 45%;">
+                <img src="{{ asset('login-icon.jpg') }}" alt="logo" width="250" height="250">
+                <div class="card-body text-center">
+                    <a class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#login">LOGIN</a>
+                    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="users" method="POST">
+                                        @csrf
+                                        <div class="form-label py-2">
+                                            <input type="text" name="username" placeholder="Enter Username"
+                                                style="width:80%" />
+                                        </div>
+                                        <div class="form-label py-2">
+                                            <input type="email" name="email" placeholder="Enter EmailID"
+                                                style="width:80%" />
+                                        </div>
+                                        <div class="form-label py-2">
+                                            <input type="password" name="password" placeholder="Enter Password"
+                                                style="width:80%" />
+                                        </div>
+                                        <div class="text-center py-2">
+                                            <button class="btn btn-dark" type="submit">Login</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text-center py-2">
-                <form action="users" method="POST">
-                    @csrf
-                    <div class="form-label py-2">
-                        <input type="text" name="username" placeholder="Enter Username" style="width:80%" />
+        </div>
+        <div class="col-6">
+            <div class="card" style="width: 45%;">
+                <img src="{{ asset('login-icon.jpg') }}" alt="logo" width="250" height="250">
+                <div class="card-body text-center">
+                    <a class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#signup">SIGNUP</a>
+                    <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="users" method="POST">
+                                        @csrf
+                                        <div class="form-label py-2">
+                                            <input type="text" name="username" placeholder="Enter Username"
+                                                style="width:80%" />
+                                        </div>
+                                        <div class="form-label py-2">
+                                            <input type="email" name="email" placeholder="Enter EmailID"
+                                                style="width:80%" />
+                                        </div>
+                                        <div class="form-label py-2">
+                                            <input type="password" name="password" placeholder="Enter Password"
+                                                style="width:80%" />
+                                        </div>
+                                        <div class="text-center py-2">
+                                            <button class="btn btn-dark" type="submit">Signup</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-label py-2">
-                        <input type="email" name="email" placeholder="Enter EmailID" style="width:80%" />
-                    </div>
-                    <div class="form-label py-2">
-                        <input type="password" name="password" placeholder="Enter Password" style="width:80%" />
-                    </div>
-                    <div class="text-center py-2">
-                        <button class="btn btn-dark" type="submit">Login</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>

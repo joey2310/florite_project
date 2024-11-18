@@ -16,7 +16,7 @@ class userController extends Controller
         $login->email=$req->email;
         $login->password=$req->password;
         $login->save();
-        return redirect('home1');
+        return redirect('welcome');
     }
 
     function homeData(Request $req){
@@ -65,8 +65,8 @@ class userController extends Controller
         return view('home1',['maindata'=>$data]);
     }
 
-    function showAPI(){
-        $dataapi= Maindata::all();
-        return view('apids',['maindata'=>$dataapi]);
+    function showapi(){
+        $apidata= Maindata::all();
+        return view('apids',['maindata'=>$apidata]);
     }
 }

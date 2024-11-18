@@ -17,7 +17,7 @@
     <div class="container border border-dark border-3">
         <div style="margin-left:200px; margin-top:50px">
             <br>
-            <h6>CLIENT : M/s. Bharat Petroleum Corporation Limited</h6>
+            <h6>CLIENT : {{ $apidata->clientName ?? 'na'}}</h6>
             <h6>PROJECT : Composite Works For ATF Pipeline From BPCL Piyala Dispatch Terminal To BPCL JEWRA Terminal
             </h6>
             <h6>MODEL NO : F VS-N-50 x 32 x 200</h6>

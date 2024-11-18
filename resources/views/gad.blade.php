@@ -5,34 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    .text {
-        position: relative;
-        width: 100%;
-        text-align: center;
-    }
-
-
-    .text-container {
-        position: absolute;
-        color: black !important;
-        left: 20%;
-        top: 810px;
-        transform: translate(-50%, -50%);
-        padding: 0.5rem;
-        text-align: center;
-        font-size: 16px;
-    }
-    </style>
+    <link rel="stylesheet" href="vgad.css">
 </head>
 
 <body>
-    <div class="container" style="position: relative; text-align: center;">
+    <div class="container" style="position: absolute; text-align: center;">
     </div>
-    <div class="text">
-        <img src="{{ asset('vgad.jpg') }}" alt="vgad" style="width:100%;">
-        <div class="text-container">
-            <h3>1/2"</h3>
+    <div class="text" style="position: absolute; width: 100%; text-align: left;">
+        <img  src="{{ asset('vgad.jpg') }}" alt="vgad" style="width:100%;">
+        <div style="position: absolute; color: black !important; left: 260px; top: 795px; text-align: left; font-size: 14px;">
+            <p>1/2" Delivery Flange</p>
+            <p>Class (#150)</p>
+        </div>
+        <div
+            style="position: absolute; color: black !important; right: 210px; bottom: 540px; text-align: center; font-size: 14px;">
+            <p>M/s. Bharat Petroleum Corporation Limited</p>
+        </div>
+        <div
+            style="position: absolute; color: black!important; right: 210px; bottom: 520px; text-align: center; font-size: 14px;">
+            <p>PO/Flo-rite/23-24/46</p>
+        </div>
+        <div
+            style="position: absolute; color: black!important; right: 210px; bottom: 520px; text-align: center; font-size: 14px;">
+            <p>PO/Flo-rite/23-24/46</p>
         </div>
     </div>
 </body>

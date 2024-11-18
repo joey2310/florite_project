@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="row text-center border border-dark border-3">
-            <h5>DATA SHEET</h5>
+            <h5>SUMMARY DATA SHEET</h5>
         </div>
         <div class="row border border-dark border-3">
             <div class="col-8">
@@ -83,7 +83,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-4 ">
+            <div class="col-4" style="padding-right:0px !important;">
                 <table>
                     <tr>
                         <td><strong>GEM No</strong></td>
@@ -111,7 +111,7 @@
                         <td>{{ $data->docNo }}</td>
                     </tr>
                 </table>
-                <table class="table table-bordered border border-dark border-3 table-sm text-center">
+                <table class="table table-bordered border border-dark border-3 table-sm text-center" style="margin-bottom: 2px !important;">
                     <tr>
                         <td class="text-start"><strong>Prepared By</strong></td>
                         <td class="text-uppercase">{{ $data->prepby }}</td>
@@ -142,15 +142,15 @@
             </div>
         </div>
         <div class="row border border-dark border-3">
-            <div class="col-3 text-center py-2" style="border-right: 1px solid black;">
+            <div class="col-4 text-center py-2" style="border-right: 1px solid black;">
                 <h6><strong>Pump Model: {{ $data->pumpModel }}</strong></h6>
             </div>
-            <div class="col-9 my-2 ps-5">
+            <div class="col-8 my-2 ps-5">
                 <h6><strong>Pump Type: Vertical Sump Pump As per API 610 (11th Edition)</strong></h6>
             </div>
         </div>
         <div class="row border border-dark border-3">
-            <div class="col-3" style="border-right: 1px solid black;">
+            <div class="col-4" style="border-right: 1px solid black;">
                 <table>
                     <tr>
                         <td class="pe-5"><strong>Liquid</strong></td>
@@ -208,7 +208,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-5">
+            <div class="col-4">
                 <table>
                     <tr>
                         <td class=""><strong>% of Solids </strong></td>
@@ -229,15 +229,15 @@
             </div>
         </div>
         <div class="row border border-dark border-3">
-            <div class="col-7 text-center py-1" style="border-right: 1px solid black;">
+            <div class="col-8 text-center py-1" style="border-right: 1px solid black;">
                 <h6><strong>PUMP DUTIES AND MOTOR (DRIVER) DETAILS</strong></h6>
             </div>
-            <div class="col-5 text-center">
+            <div class="col-4 text-center">
                 <h6><strong>MATERIAL OF CONSTRUCTION</strong></h6>
             </div>
         </div>
         <div class="row border border-dark border-3">
-            <div class="col-3" style="border-right: 1px solid black;">
+            <div class="col-4" style="border-right: 1px solid black;">
                 <table>
                     <tr>
                         <td class="pe-5"><strong>Suct.Size</strong></td>
@@ -311,7 +311,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-5">
+            <div class="col-4">
                 <table>
                     <tr>
                         <td><strong>Casing</strong></td>
@@ -401,9 +401,9 @@
                 <td>CLASS II, DIV 1 FOR GROUP IIA AND IIB GASES. IEC 60034</td><br>
                 <td>STARTING WILL BE STAR DELTA.</td><br>
             </div>
-            <div class="col-2 text-center p-1"
+            <div class="col-2 text-center"
                 style="display: flex; flex-direction: column; justify-content: flex-end;">
-                <h6 style="border: 3px solid black">Page No.01</h6>
+                <p style="border: 3px solid black">Page No.01</p>
             </div>
         </div>
 </body>

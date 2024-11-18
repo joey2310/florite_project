@@ -23,16 +23,14 @@
                 </div>
                 <div class="col-10" style="margin-top:65px; height: 100px; font-size: 45px;">
                     Florite Engineering Corporation Pvt. Ltd.
-                </div>
+                </div>  
             </div>
         </header>
         <div>
-            <a href="{{ route('home1') }}" class="btn btn-outline-success fs-3"
-                style="height:60px; width:200px; margin: 20px;">Home</a>
-            <a href="{{ route('formula') }}" class="btn btn-outline-success fs-3"
-                style="height:60px; width:200px; margin: 20px;">Formula</a>
-            <a href="{{ route('users') }}" class="btn btn-outline-success fs-3"
-                style="height:60px; width:200px; margin: 20px;">Login</a>
+            <a href="{{ route('home1') }}" class="btn btn-outline-success fs-3 m-5 p-3">Technical Documentation</a>
+            <a href="{{ route('formula') }}" class="btn btn-outline-success fs-3 m-5 p-3">Formula</a>
+            <a href="{{ route('users') }}" class="btn btn-outline-success fs-3 m-5 p-3">Login</a>
+                <a href="{{ route('users') }}" class="btn btn-outline-success fs-3 m-5 p-3">Tenders Tracksheet</a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

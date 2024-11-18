@@ -58,12 +58,14 @@
                     @foreach ($maindata as $member)
                     <tr class="table-group-divider">
                         <td>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
-                                    class="fa fa-solid fa-eye fa-flip-horizontal" style="color: #2d00b3;"></i></a>
+                            <a class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop{{ $member['id'] }}">
+                                <i class="fa fa-solid fa-eye fa-flip-horizontal" style="color: #2d00b3;"></i>
+                            </a>
                             <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
+                            <div class="modal fade" id="staticBackdrop{{ $member['id'] }}" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1"
+                                aria-labelledby="staticBackdropLabel{{ $member['id'] }}" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -76,7 +78,7 @@
                                                     class="btn btn-secondary btn-lg">Summary Datasheet</a>
                                             </div>
                                             <div class="m-3">
-                                                <a href="{{ route('apids', $member['id']) }}"
+                                                <a href="{{ route('apids.show', $member['id']) }}"
                                                     class="btn btn-secondary btn-lg">API Datasheet</a>
                                             </div>
                                             <div class="m-3">
@@ -99,7 +101,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </td>
                         <td><a class="btn btn-warning"><i class="fa fa-solid fa-pencil"></i></a></td>
                         <td><a class="btn btn-danger"><i class="fa fa-solid fa-trash"></i></a></td>
@@ -121,9 +122,8 @@
                 </tbody>
             </table>
         </div>
-
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
