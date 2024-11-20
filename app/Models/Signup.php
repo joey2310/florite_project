@@ -5,8 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Login extends Model
+class Signup extends Model
 {
     use HasFactory;
-    public $timestamps=false;
+    protected $table = 'signup';
+    protected $fillable = ['username','email','password'];
+
 }

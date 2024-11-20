@@ -4,20 +4,27 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Login;
+use App\Models\Signup;
 use App\Models\Maindata;
+use Illuminate\Support\Facades\Hash;
 
 
 class userController extends Controller
-{    
-    function addData(Request $req){
-        $login = new login;
-        $login->username=$req->username;
-        $login->email=$req->email;
-        $login->password=$req->password;
-        $login->save();
-        return redirect('welcome');
-    }
+{   
+    function addData(Request $req)
+{
+        try{
+            $signup = new Signup();
+            $signup->username=$req->username;
+            $signup->email=$req->email;
+            $signup->password=Hash::make($req->password);
+            $signup->save();
+            return redirect()->route('users');
+        }
+        catch(\Exception $e){
+            return $e->getMessage();
+        }
+}
 
     function homeData(Request $req){
         // dd($req->all());
@@ -69,4 +76,5 @@ class userController extends Controller
         $apidata= Maindata::all();
         return view('apids',['maindata'=>$apidata]);
     }
+
 }

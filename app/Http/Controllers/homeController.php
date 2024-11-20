@@ -35,10 +35,6 @@ class homeController extends Controller
     {
         return view('home1');
     }
-    public function register()
-    {
-        return view('register');
-    }
   public function formula()
     {
         return view('formula');

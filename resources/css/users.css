@@ -1,0 +1,40 @@
+/* Style for the modal inputs */
+.custom-input {
+    width: 60%; /* Set consistent width */
+    margin: 0 auto; /* Center the input fields */
+    padding: 10px; /* Add comfortable padding */
+    font-size: 1rem; /* Ensure readability */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover/focus transition */
+}
+
+/* Change border color on focus */
+.custom-input:focus {
+    border-color: #007bff; /* Primary color for focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+/* Style for the submit button */
+.custom-btn {
+    padding: 10px 30px; /* Button padding */
+    font-size: 1rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #343a40; /* Dark background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+/* Change button style on hover */
+.custom-btn:hover {
+    background-color: #212529; /* Slightly darker shade */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Center alignment for the form */
+.modal-body form {
+    text-align: center; /* Center form content */
+}
