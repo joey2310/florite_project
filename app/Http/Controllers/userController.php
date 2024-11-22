@@ -6,26 +6,12 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Signup;
 use App\Models\Maindata;
+use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Hash;
 
 
 class userController extends Controller
 {   
-    function addData(Request $req)
-{
-        try{
-            $signup = new Signup();
-            $signup->username=$req->username;
-            $signup->email=$req->email;
-            $signup->password=Hash::make($req->password);
-            $signup->save();
-            return redirect()->route('users');
-        }
-        catch(\Exception $e){
-            return $e->getMessage();
-        }
-}
-
     function homeData(Request $req){
         // dd($req->all());
         try{
@@ -77,4 +63,60 @@ class userController extends Controller
         return view('apids',['maindata'=>$apidata]);
     }
 
+    function addData(Request $req){
+        $validateData = $req->validate([
+            'username' => 'required|string|max: 255',
+            'email' => 'required|string|email|max: 255|unique:signup,email',
+            'password' => 'required|string|min:8',
+        ]);
+        // dd($validateData);
+        if(!$validateData){
+            return redirect()->route('users')->with('error', 'Invalid username or password');
+        }
+        
+        $signup = Signup::create([
+            'username' => $validateData['username'],
+            'email' => $validateData['email'],
+            'password' => Hash::make($validateData['password']),
+        ]);
+
+        return redirect()->route('users')->with('success', 'Signup Successfull, Please Login');
+    }
+    
+    public function login(Request $request)
+{
+    // Validate incoming request data
+    $validatedData = $request->validate([
+        'email' => 'required|email',
+        'password' => 'required|string|min:8',
+    ]);
+
+    // Find user by email
+    $user = Signup::where('email', $validatedData['email'])->first();
+
+    // Debugging and validation
+    if (!$user) {
+        return response()->json(['message' => 'User not found.'], 404);
+    }
+
+    // Check if the password is correct
+    if (!Hash::check($validatedData['password'], $user->password)) {
+        return response()->json(['message' => 'Invalid credentials.'], 401);
+    }
+
+    // Check if user is active
+    if (isset($user->is_active) && !$user->is_active) {
+        return response()->json(['message' => 'Your account is inactive. Please contact support.'], 403);
+    }
+
+    // Generate token
+    try {
+        $token = $user->createToken('auth_token')->plainTextToken;
+    } catch (\Exception $e) {
+        return response()->json(['message' => 'Unable to generate token. Please try again later.'], 500);
+    }
+
+    // Return response
+    return redirect()->route('welcome');
+}
 }

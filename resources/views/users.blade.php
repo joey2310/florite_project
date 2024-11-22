@@ -35,20 +35,25 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="users" method="POST">
+                                        <form action="{{ route('users') }}" method="POST">
                                             @csrf
                                             <div class="form-group py-2">
-                                                <input type="email" name="email" class="form-control custom-input"
-                                                    placeholder="Enter Email ID" required />
+                                                <label for="email">Email</label>
+                                                <input type="email" name="email" id="email"
+                                                    class="form-control custom-input" placeholder="Enter Email ID"
+                                                    required />
                                             </div>
                                             <div class="form-group py-2">
-                                                <input type="password" name="password" class="form-control custom-input"
-                                                    placeholder="Enter Password" required />
+                                                <label for="password">Password</label>
+                                                <input type="password" name="password" id="password"
+                                                    class="form-control custom-input" placeholder="Enter Password"
+                                                    required />
                                             </div>
                                             <div class="text-center py-2">
                                                 <button class="btn btn-dark custom-btn" type="submit">Login</button>
                                             </div>
                                         </form>
+
                                     </div>
                                 </div>
                             </div>

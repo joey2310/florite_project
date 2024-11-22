@@ -22,6 +22,7 @@ Route::get('/users', [homeController::class, 'users'])->name('users');
 Route::get('/formula', [homeController::class, 'formula'])->name('formula');
 
 Route::post('/signup', [userController::class, 'addData']);
+Route::post('/users', [userController::class, 'login'])->name('login');
 Route::post('/home', [userController::class, 'homeData']);
 Route::get('/home1', [userController::class, 'show'])->name('home1');
 
