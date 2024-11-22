@@ -104,11 +104,6 @@ class userController extends Controller
         return response()->json(['message' => 'Invalid credentials.'], 401);
     }
 
-    // Check if user is active
-    if (isset($user->is_active) && !$user->is_active) {
-        return response()->json(['message' => 'Your account is inactive. Please contact support.'], 403);
-    }
-
     // Generate token
     try {
         $token = $user->createToken('auth_token')->plainTextToken;
