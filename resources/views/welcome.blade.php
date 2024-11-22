@@ -15,22 +15,53 @@
 </head>
 
 <body>
-    <div class="container text-center text-primary fw-bolder">
+    <div class="text-center text-primary fw-bolder">
         <header>
             <div class="d-flex row">
-                <div class="text-center m-5 col-1">
-                    <img src="{{ asset('Screenshot 2024-08-20 233127.jpg') }}" alt="logo" width="250" height="100">
+                <div class="text-center pt-3 ms-5 col-1">
+                    <img src="{{ asset('flo-rite-pumps-logo.jpg') }}" alt="logo" width="250" height="100">
                 </div>
-                <div class="col-10" style="margin-top:65px; height: 100px; font-size: 45px;">
-                    Florite Engineering Corporation Pvt. Ltd.
-                </div>  
+                <div class="col-10">
+                    <div class="" style="font-size: 40px;color:darkblue">
+                        Florite Engineering Corporation Pvt. Ltd.
+                    </div>
+                    <div class="" style="font-size: 40px;">
+                        <a class="btn btn-outline-dark">Home</a>
+                        <a class="btn btn-outline-dark">Technical</a>
+                        <a class="btn btn-outline-dark">Purchase</a>
+                        <a class="btn btn-outline-dark">Production</a>
+                        <a class="btn btn-outline-dark">Testing</a>
+                        <a class="btn btn-outline-dark">Sales</a>
+                        <a class="btn btn-outline-dark">Marketing</a>
+                        <a class="btn btn-outline-dark">About</a>
+                        <a class="btn btn-outline-dark">Contact</a>
+                    </div>
+                </div>
             </div>
+            <hr aria-hidden="true" style="width: 100%; height: 3px; background-color: black;">
         </header>
         <div>
-            <a href="{{ route('home1') }}" class="btn btn-outline-success fs-3 m-5 p-3">Technical Documentation</a>
-            <a href="{{ route('formula') }}" class="btn btn-outline-success fs-3 m-5 p-3">Formula</a>
-            <a href="{{ route('users') }}" class="btn btn-outline-success fs-3 m-5 p-3">Login</a>
+            <div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Screenshot 2024-08-20 233127.jpg" class="d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="{{ route('home1') }}" class="btn btn-outline-success fs-3 m-5 p-3">Technical Documentation</a>
+                <a href="{{ route('formula') }}" class="btn btn-outline-success fs-3 m-5 p-3">Formula</a>
+                <a href="{{ route('users') }}" class="btn btn-outline-success fs-3 m-5 p-3">Login</a>
                 <a href="{{ route('users') }}" class="btn btn-outline-success fs-3 m-5 p-3">Tenders Tracksheet</a>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

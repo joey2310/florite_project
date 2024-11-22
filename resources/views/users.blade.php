@@ -17,7 +17,7 @@
     <div class="container">
         <h1 class="text-primary m-3 text-center">WELCOME to FLO-RITE ENGINEERING CORPORATION LTD</h1>
         <div class="text-center py-3">
-            <img src="{{ asset('Screenshot 2024-08-20 233127.jpg') }}" alt="logo" width="250" height="100">
+            <img src="{{ asset('flo-rite-pumps-logo.jpg') }}" alt="logo" width="250" height="100">
         </div>
         <div class="d-flex row" style="margin-left:17%; margin-top:6%;">
             <div class="col-6 ">

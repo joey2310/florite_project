@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="">
         <div class="row">
             <div class="text-center col-3 mt-3">
                 <img src="{{ asset('Screenshot 2024-08-20 233127.jpg') }}" alt="logo" width="100" height="40">
