@@ -15,10 +15,43 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="p-3">
-            <h3 class="text-primary text-center">Welcome to FLO-RITE ENGINEERING CORPORATION LTD.</h3>
-        </div>
+    <header style="background-color:aliceblue;">
+        <div class="text-center text-primary fw-bolder">
+            <div class="d-flex row">
+                <div class="text-center ps-5 pt-3 col-2">
+                    <img src="{{ asset('flo-rite-pumps-logo.jpg') }}" alt="logo" width="250" height="100">
+                </div>
+                <div class="col-7">
+                    <div class="pt-2" style="color:darkblue">
+                        <h1>Florite Engineering Corporation Pvt. Ltd.</h1>
+                    </div>
+                    <div class="" style="font-size: 30px;">
+                        <a href="{{ route('home1') }}" class="btn btn-outline-dark">Technical</a>
+                        <a class="btn btn-outline-dark">Purchase</a>
+                        <a class="btn btn-outline-dark">Production</a>
+                        <a class="btn btn-outline-dark">Testing</a>
+                        <a class="btn btn-outline-dark">Sales</a>
+                        <a class="btn btn-outline-dark">Marketing</a>
+                        <a class="btn btn-outline-dark">About</a>
+                        <a class="btn btn-outline-dark">Contact</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex justify-content-end pe-3">
+                        <a href="{{ route('users') }}" class="btn btn-outline-dark mt-2">Logout</a>
+                    </div>
+                    <div class="d-flex justify-content-start pe-3 mt-3">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" style="width:270px" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr aria-hidden="true" style="width: 100%; height: 3px; background-color: black;">
+    </header>
+    <div>
         <div class="d-flex justify-content-end">
             <a href="{{ route('home1') }}" class="btn btn-outline-success"><i class="fa fa-solid fa-chevron-left"></i>
                 Back</a>

@@ -26,7 +26,6 @@
                         <h1>Florite Engineering Corporation Pvt. Ltd.</h1>
                     </div>
                     <div class="" style="font-size: 30px;">
-                        <a class="btn btn-outline-dark">Home</a>
                         <a href="{{ route('home1') }}" class="btn btn-outline-dark">Technical</a>
                         <a class="btn btn-outline-dark">Purchase</a>
                         <a class="btn btn-outline-dark">Production</a>
