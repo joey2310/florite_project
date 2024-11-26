@@ -53,19 +53,19 @@
                 <hr aria-hidden="true" style="width: 100%; height: 3px; background-color: black;">
         </header>
         <div class="d-flex justify-content-between pb-2">
-            <div class="me-2">
+            <div class="ms-3">
                 <a href="{{ route('home') }}" class="btn btn-outline-success"><i class="fa fa-solid fa-plus"></i> Add
                     Datasheet</a>
             </div>
-            <div>
+            <div class="me-3">
                 <a href="{{ route('welcome') }}" class="btn btn-outline-success"><i
                         class="fa fa-solid fa-chevron-left"></i> Back</a>
             </div>
         </div>
         <div>
-            <table class="table table-dark table-striped table-bordered text-center">
+            <table class=" table table-striped table-bordered table-hover text-center">
                 <thead>
-                    <tr>
+                    <tr class="table-primary">
                         <th colspan="3">Actions</th>
                         <th>Client</th>
                         <th>Location</th>

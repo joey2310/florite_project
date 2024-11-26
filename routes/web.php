@@ -28,3 +28,5 @@ Route::get('/home1', [userController::class, 'show'])->name('home1');
 
 Route::get('/datasheet/{id}', [dsController::class, 'show'])->name('datasheet.show');
 Route::get('/apids/{id}', [apidsController::class, 'show'])->name('apids.show');
+
+Route::get('/print', function () {return view('print');});

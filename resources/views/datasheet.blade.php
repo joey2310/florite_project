@@ -15,13 +15,13 @@
 
 <body>
     <div class="container border border-dark mt-2">
-        <div class="row justify-content-center border border-dark border-3">
+        <div class="row justify-content-center border border-dark border-3 border border-bottom-0">
             <div class=" row col-6">
                 <div class="col-4">
                     <img src="{{ asset('Screenshot 2024-08-20 233127.jpg') }}" alt="logo" width="250" height="100">
                 </div>
                 <div class="col-8 text-center align-self-center">
-                    <h4> FLO-RITE ENGINEERING CORPORATION</h4>
+                    <h3> FLO-RITE ENGINEERING CORPORATION</h3>
                 </div>
             </div>
             <div class="col-6">
@@ -40,10 +40,10 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center border border-dark border-3">
+        <div class="row text-center border border-dark border-3 border border-bottom-0">
             <h5>SUMMARY DATA SHEET</h5>
         </div>
-        <div class="row border border-dark border-3">
+        <div class="row border border-dark border-3 border border-bottom-0">
             <div class="col-8">
                 <table>
                     <tr>
@@ -111,7 +111,8 @@
                         <td>{{ $data->docNo }}</td>
                     </tr>
                 </table>
-                <table class="table table-bordered border border-dark border-3 table-sm text-center" style="margin-bottom: 2px !important;">
+                <table class="table table-bordered border border-dark border-3 table-sm text-center"
+                    style="margin-bottom: -2px !important;">
                     <tr>
                         <td class="text-start"><strong>Prepared By</strong></td>
                         <td class="text-uppercase">{{ $data->prepby }}</td>
@@ -141,16 +142,16 @@
                 </table>
             </div>
         </div>
-        <div class="row border border-dark border-3">
-            <div class="col-4 text-center py-2" style="border-right: 1px solid black;">
+        <div class="row border border-dark border-3 border border-bottom-0">
+            <div class="col-4 text-center py-2" style="border-right: 3px solid black;">
                 <h6><strong>Pump Model: {{ $data->pumpModel }}</strong></h6>
             </div>
             <div class="col-8 my-2 ps-5">
                 <h6><strong>Pump Type: Vertical Sump Pump As per API 610 (11th Edition)</strong></h6>
             </div>
         </div>
-        <div class="row border border-dark border-3">
-            <div class="col-4" style="border-right: 1px solid black;">
+        <div class="row border border-dark border-3 border border-bottom-0">
+            <div class="col-4" style="border-right: 3px solid black;">
                 <table>
                     <tr>
                         <td class="pe-5"><strong>Liquid</strong></td>
@@ -174,7 +175,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-4" style="border-right: 1px solid black;">
+            <div class="col-4" style="border-right: 3px solid black;">
                 <table>
                     <tr>
                         <td><strong>Capacity</strong></td>
@@ -228,16 +229,16 @@
                 </table>
             </div>
         </div>
-        <div class="row border border-dark border-3">
-            <div class="col-8 text-center py-1" style="border-right: 1px solid black;">
+        <div class="row border border-dark border-3 border border-bottom-0">
+            <div class="col-8 text-center py-1" style="border-right: 3px solid black;">
                 <h6><strong>PUMP DUTIES AND MOTOR (DRIVER) DETAILS</strong></h6>
             </div>
             <div class="col-4 text-center">
                 <h6><strong>MATERIAL OF CONSTRUCTION</strong></h6>
             </div>
         </div>
-        <div class="row border border-dark border-3">
-            <div class="col-4" style="border-right: 1px solid black;">
+        <div class="row border border-dark border-3 border border-bottom-0">
+            <div class="col-4" style="border-right: 3px solid black;">
                 <table>
                     <tr>
                         <td class="pe-5"><strong>Suct.Size</strong></td>
@@ -271,7 +272,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-4" style="border-right: 1px solid black;">
+            <div class="col-4" style="border-right: 3px solid black;">
                 <table>
                     <tr>
                         <td><strong>Efficiency (%)</strong></td>
@@ -361,21 +362,21 @@
                 </table>
             </div>
         </div>
-        <div class="row text-center border border-dark border-3">
+        <div class="row text-center border border-dark border-3 border border-bottom-0">
             <h5>MOTOR DETAILS:</h5>
         </div>
-        <div class="row border border-dark border-3">
-            <div class="col-2" style="border-right: 1px solid black;">
+        <div class="row border border-dark border-3 border border-bottom-0">
+            <div class="col-3" style="border-right: 3px solid black;">
                 <tr>
                     <td><strong>Rating KW : 5.5 </strong></td>
                 </tr>
             </div>
-            <div class="col-5" style="border-right: 1px solid black;">
+            <div class="col-3" style="border-right: 3px solid black;">
                 <tr>
                     <td><strong>Make : CGL/BBL/LHP </strong></td>
                 </tr>
             </div>
-            <div class="col-2" style="border-right: 1px solid black;">
+            <div class="col-3" style="border-right: 3px solid black;">
                 <tr>
                     <td><strong>RPM : 2900 </strong></td>
                 </tr>
@@ -386,7 +387,7 @@
                 </tr>
             </div>
         </div>
-        <div class="row border border-dark border-3">
+        <div class="row border border-dark border-3 ">
             <div class="col-10">
                 <strong>
                     <td>
@@ -401,9 +402,8 @@
                 <td>CLASS II, DIV 1 FOR GROUP IIA AND IIB GASES. IEC 60034</td><br>
                 <td>STARTING WILL BE STAR DELTA.</td><br>
             </div>
-            <div class="col-2 text-center"
-                style="display: flex; flex-direction: column; justify-content: flex-end;">
-                <p style="border: 3px solid black">Page No.01</p>
+            <div class="col-2 text-center mt-auto">
+                <h6>Page No.01</h6>
             </div>
         </div>
 </body>
