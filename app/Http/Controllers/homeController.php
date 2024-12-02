@@ -39,4 +39,8 @@ class homeController extends Controller
     {
         return view('formula');
     }
+    public function contact()
+    {
+        return view('contact');
+    }
 }

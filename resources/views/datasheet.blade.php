@@ -11,11 +11,33 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+    @media print {
+        body {
+            font-size: 14px;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main-div {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 150%;
+            height: 100%;
+        }
+    }
+    </style>
 </head>
 
 <body>
-    <div class="container border border-dark mt-2">
-        <div class="row justify-content-center border border-dark border-3 border border-bottom-0">
+    <div class="container border border-dark border-3 mt-2 main-div">
+        <div class="row justify-content-center border-bottom border-3 border-dark">
             <div class=" row col-6">
                 <div class="col-4">
                     <img src="{{ asset('Screenshot 2024-08-20 233127.jpg') }}" alt="logo" width="250" height="100">
@@ -30,7 +52,7 @@
                 </div>
                 <div class="row">
                     <div class="col-2">
-                        <h6>ADDRESS :</h6>
+                        <h6>ADDRESS</h6>
                     </div>
                     <div class="text-start col-10">
                         <h6>1st Floor, gala no.7, Janta industrial Estate, 162, Senapati Bapat
@@ -40,10 +62,10 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center border border-dark border-3 border border-bottom-0">
+        <div class="row text-center border-bottom border-3 border-dark">
             <h5>SUMMARY DATA SHEET</h5>
         </div>
-        <div class="row border border-dark border-3 border border-bottom-0">
+        <div class="row border-bottom border-3 border-dark">
             <div class="col-8">
                 <table>
                     <tr>
@@ -142,7 +164,7 @@
                 </table>
             </div>
         </div>
-        <div class="row border border-dark border-3 border border-bottom-0">
+        <div class="row border-bottom border-3 border-dark">
             <div class="col-4 text-center py-2" style="border-right: 3px solid black;">
                 <h6><strong>Pump Model: {{ $data->pumpModel }}</strong></h6>
             </div>
@@ -150,7 +172,7 @@
                 <h6><strong>Pump Type: Vertical Sump Pump As per API 610 (11th Edition)</strong></h6>
             </div>
         </div>
-        <div class="row border border-dark border-3 border border-bottom-0">
+        <div class="row border-bottom border-3 border-dark">
             <div class="col-4" style="border-right: 3px solid black;">
                 <table>
                     <tr>
@@ -229,7 +251,7 @@
                 </table>
             </div>
         </div>
-        <div class="row border border-dark border-3 border border-bottom-0">
+        <div class="row border-bottom border-3 border-dark">
             <div class="col-8 text-center py-1" style="border-right: 3px solid black;">
                 <h6><strong>PUMP DUTIES AND MOTOR (DRIVER) DETAILS</strong></h6>
             </div>
@@ -237,7 +259,7 @@
                 <h6><strong>MATERIAL OF CONSTRUCTION</strong></h6>
             </div>
         </div>
-        <div class="row border border-dark border-3 border border-bottom-0">
+        <div class="row border-bottom border-3 border-dark">
             <div class="col-4" style="border-right: 3px solid black;">
                 <table>
                     <tr>
@@ -362,10 +384,10 @@
                 </table>
             </div>
         </div>
-        <div class="row text-center border border-dark border-3 border border-bottom-0">
+        <div class="row text-center border-bottom border-3 border-dark">
             <h5>MOTOR DETAILS:</h5>
         </div>
-        <div class="row border border-dark border-3 border border-bottom-0">
+        <div class="row border-bottom border-3 border-dark">
             <div class="col-3" style="border-right: 3px solid black;">
                 <tr>
                     <td><strong>Rating KW : 5.5 </strong></td>
@@ -387,7 +409,7 @@
                 </tr>
             </div>
         </div>
-        <div class="row border border-dark border-3 ">
+        <div class="row border-bottom-0 border-3 border-dark">
             <div class="col-10">
                 <strong>
                     <td>

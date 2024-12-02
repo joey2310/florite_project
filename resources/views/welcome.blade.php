@@ -33,14 +33,14 @@
                         <a class="btn btn-outline-dark">Sales</a>
                         <a class="btn btn-outline-dark">Marketing</a>
                         <a class="btn btn-outline-dark">About</a>
-                        <a class="btn btn-outline-dark">Contact</a>
+                        <a href="{{ route('contact')}}" class="btn btn-outline-dark">Contact</a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="d-flex justify-content-end pe-3">
                         <a href="{{ route('users') }}" class="btn btn-outline-dark mt-2">Logout</a>
                     </div>
-                    <div class="d-flex justify-content-start pe-3 mt-3">
+                    <div class="d-flex justify-content-start pe-3 pt-4">
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" style="width:270px" type="search" placeholder="Search"
                                 aria-label="Search">
@@ -80,10 +80,6 @@
                 </div>
             </div>
         </div>
-        <div>
-            <a href="{{ route('home1') }}" class="btn btn-outline-success fs-5">Technical Documentation</a>
-        </div>
-    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
