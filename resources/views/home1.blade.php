@@ -102,6 +102,10 @@
                                                 class="btn btn-secondary btn-lg">Summary Datasheet</a>
                                         </div>
                                         <div class="m-3">
+                                            <a href="{{ route('performance.show', $member['id']) }}"
+                                                class="btn btn-secondary btn-lg">Performance Curve</a>
+                                        </div> 
+                                        <div class="m-3">
                                             <a href="{{ route('apids.show', $member['id']) }}"
                                                 class="btn btn-secondary btn-lg">API Datasheet</a>
                                         </div>

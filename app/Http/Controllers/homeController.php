@@ -17,7 +17,10 @@ class homeController extends Controller
     {
         return view('datasheet');
     }
-
+    public function performance()
+    {
+        return view('performance');
+    }
     public function apids()
     {
         return view('apids');

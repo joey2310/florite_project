@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\userController;
 use App\Http\Controllers\formulaController;
+use App\Http\Controllers\performanceController;
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -16,6 +17,7 @@ Route::get('/', function () {
 })->name('users');
 
 Route::get('/home', [homeController::class, 'home'])->name('home');
+Route::get('/performance', [homeController::class, 'performance'])->name('performance');
 Route::get('/apids', [homeController::class, 'apids'])->name('apids');
 Route::get('/gad', [homeController::class, 'gad'])->name('gad');
 Route::get('/users', [homeController::class, 'users'])->name('users');
@@ -29,5 +31,6 @@ Route::get('/home1', [userController::class, 'show'])->name('home1');
 
 Route::get('/datasheet/{id}', [dsController::class, 'show'])->name('datasheet.show');
 Route::get('/apids/{id}', [apidsController::class, 'show'])->name('apids.show');
+Route::get('/performance/{id}', [performanceController::class, 'show'])->name('performance.show');
 
 Route::get('/print', function () {return view('print');});
