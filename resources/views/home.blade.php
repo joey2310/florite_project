@@ -37,10 +37,7 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="d-flex justify-content-end pe-3">
-                        <a href="{{ route('users') }}" class="btn btn-outline-dark mt-2">Logout</a>
-                    </div>
-                    <div class="d-flex justify-content-start pe-3 mt-3">
+                    <div class="d-flex justify-content-start pe-3 pt-5 mt-4">
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" style="width:270px" type="search" placeholder="Search"
                                 aria-label="Search">
@@ -52,7 +49,7 @@
             <hr aria-hidden="true" style="width: 100%; height: 3px; background-color: black;">
     </header>
     <div>
-        <div class="d-flex justify-content-end">
+        <div class="d-flex justify-content-end me-3">
             <a href="{{ route('home1') }}" class="btn btn-outline-success"><i class="fa fa-solid fa-chevron-left"></i>
                 Back</a>
         </div>
