@@ -23,6 +23,7 @@ Route::get('/gad', [homeController::class, 'gad'])->name('gad');
 Route::get('/users', [homeController::class, 'users'])->name('users');
 Route::get('/formula', [homeController::class, 'formula'])->name('formula');
 Route::get('/contact', [homeController::class, 'contact'])->name('contact');
+Route::get('/about', [homeController::class, 'about'])->name('about');
 
 Route::post('/signup', [userController::class, 'addData']);
 Route::post('/users', [userController::class, 'login'])->name('login');

@@ -32,7 +32,7 @@
                         <a class="btn btn-outline-dark">Testing</a>
                         <a class="btn btn-outline-dark">Sales</a>
                         <a class="btn btn-outline-dark">Marketing</a>
-                        <a class="btn btn-outline-dark">About</a>
+                        <a href="{{ route('about')}}" class="btn btn-outline-dark">About</a>
                         <a href="{{ route('contact')}}" class="btn btn-outline-dark">Contact</a>
                     </div>
                 </div>

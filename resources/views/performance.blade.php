@@ -14,57 +14,87 @@
     <style>
     @media print {
 
-        .head{
-            font-size: 9px;
+        h6,
+        h5 {
+            font-size: 6px;
         }
-        h6 {
-            font-size: 9px;
+
+        .logo-img {
+            width: auto;
+            height: 30%;
+        }
+
+        .graph-img {
+            width: 90%;
+            height: auto;
+        }
+
+        tr {
+            height: 5px;
         }
     }
     </style>
 </head>
 
 <body>
-    <div class="border border-3 border-dark">
-        <div class="row">
-            <div class="col-6">
-                <table class="table table-bordered border-dark border-3 text-center head" style="margin-bottom: -1px;">
-                    <tr>
-                        <td> Pump Type & Size</td>
-                        <td> SUC.</td>
-                        <td> DEL.</td>
-                        <td> RPM.</td>
-                        <td> DATE</td>
-                    </tr>
-                    <td> FVS-N-75 x 65 x 315</td>
-                    <td> 75</td>
-                    <td> 65</td>
-                    <td> 2900</td>
-                    <td> 29/04/2024</td>
-                </table>
-            </div>
-            <div class="d-flex m-1 col-5 text-center head">
-                <img src="{{ asset('flo-rite-pumps-logo.jpg') }}" alt="logo" width="100" height="60">
-                <h5 class=" ms-5">FLORITE ENGINEERING CORPORATION <br> Performance Curve</h5>
+    <div class="container border border-3 border-dark" style="--bs-gutter-x: -1.5rem;">
+        <div class="d-flex">
+            <table class=" table-bordered border-dark border-3 text-center" style="width:50%">
+                <tr>
+                    <td>
+                        <h6>Pump Type & Size</h6>
+                    </td>
+                    <td>
+                        <h6>SUC.</h6>
+                    </td>
+                    <td>
+                        <h6>DEL.</h6>
+                    </td>
+                    <td>
+                        <h6>RPM.</h6>
+                    </td>
+                    <td>
+                        <h6>DATE</h6>
+                    </td>
+                </tr>
+                <td>
+                    <h6>FVS-N-75 x 65 x 315</h6>
+                </td>
+                <td>
+                    <h6>75</h6>
+                </td>
+                <td>
+                    <h6>65</h6>
+                </td>
+                <td>
+                    <h6>2900</h6>
+                </td>
+                <td>
+                    <h6>29/04/2024</h6>
+                </td>
+            </table>
+            <div class="d-flex m-1 text-center">
+                <img class="logo-img" src="{{ asset('flo-rite-pumps-logo.jpg') }}" alt="logo" width="20%" height="auto">
+                <h5 class="ms-5">FLORITE ENGINEERING CORPORATION <br> Performance Curve</h5>
             </div>
         </div>
         <div>
-            <table class="table table-bordered border-dark border-3" style="margin-bottom: -1px;">
+            <table class="table-bordered border-dark border-3" style="width:100%">
                 <tbody>
                     <tr>
-                        <td>
+                        <td style="width:10%">
                             <h6 class="text-center">Customer</h6>
                         </td>
                         <td colspan="3">
-                            <h6 class="">Bharat Petroleum Corporation Limited</h6>
+                            <h6 class="ps-1">Bharat Petroleum Corporation Limited</h6>
                         </td>
                         <td colspan="3">
                         </td>
-                        <td>
+                        <td style="width:10%">
                             <h6 class="text-center">Liquid</h6>
                         </td>
-                        <td colspan="2">
-                            <h6 class="text-center">Slop</h6>
+                        <td style="width:11%" colspan="2">
+                            <h6 class="text-center">MS / HSD / SKO</h6>
                         </td>
                     </tr>
                     <tr>
@@ -72,7 +102,7 @@
                             <h6 class="text-center">Location</h6>
                         </td>
                         <td colspan="3">
-                            <h6 class="">Hyderabad</h6>
+                            <h6 class="ps-1">Hyderabad</h6>
                         </td>
                         <td colspan="3">
                         </td>
@@ -88,7 +118,7 @@
                             <h6 class="text-center">Ref No.</h6>
                         </td>
                         <td colspan="3">
-                            <h6 class="">Q1P - 4411</h6>
+                            <h6 class="ps-1">Q1P - 4411</h6>
                         </td>
                         <td colspan="3">
                         </td>
@@ -104,7 +134,7 @@
                             <h6 class="text-center">Date</h6>
                         </td>
                         <td colspan="3">
-                            <h6 class="">25-12-2024</h6>
+                            <h6 class="ps-1">25-12-2024</h6>
                         </td>
                         <td colspan="3">
                         </td>
@@ -172,7 +202,7 @@
                     </tr>
                 </tbody>
             </table>
-            <table class="table table-bordered border-dark border-3" style="margin-bottom: -1px;">
+            <table class="table-bordered border-dark border-3" style=" width:100%">
                 <tbody>
                     <tr>
                         <td>
@@ -246,15 +276,14 @@
                 </tbody>
             </table>
         </div>
-        <div>
-            <img class="justify-content-center" src="{{ asset('graph.jpg') }}" alt="graph">
-
+        <div class="text-center">
+            <img class="graph-img" style="margin: 10px;" src="{{ asset('graph.jpg') }}" alt="graph">
         </div>
         <div>
-            <table class="table table-bordered border-dark border-3" style="margin-bottom: -1px;">
+            <table class="table-bordered border-dark border-3" style="width:100%">
                 <tbody>
                     <tr>
-                        <td>
+                        <td class="ps-3">
                             <h6>1. Pump Performance with : ISO-9906-GRII</h6>
                         </td>
                         <td class="text-center">
@@ -271,7 +300,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="ps-3">
                             <h6>2.NSPHa should be at least 0.5 m higher than NPSHr</h6>
                         </td>
                         <td class="text-center">
