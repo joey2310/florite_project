@@ -13,23 +13,19 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
     @media print {
-        body {
-            font-size: 14px;
-            margin: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .main-div {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-        }
-
         img {
-            width: 150%;
-            height: 100%;
+            width: 100px;
+            height: 50px;
+        }
+
+        h5,
+        h6,
+        h3 {
+            font-size: 8px;
+        }
+
+        .client {
+            font-size: 8px;
         }
     }
     </style>
@@ -62,10 +58,10 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center border-bottom border-3 border-dark">
+        <div class="row text-center border-bottom border-3 border-dark ">
             <h5>SUMMARY DATA SHEET</h5>
         </div>
-        <div class="row border-bottom border-3 border-dark">
+        <div class="row border-bottom border-3 border-dark client">
             <div class="col-8">
                 <table>
                     <tr>
@@ -133,7 +129,7 @@
                         <td>{{ $data->docNo }}</td>
                     </tr>
                 </table>
-                <table class="table table-bordered border border-dark border-3 table-sm text-center"
+                <table class="table table-bordered border border-end-0 border-dark border-3 table-sm text-center"
                     style="margin-bottom: -2px !important;">
                     <tr>
                         <td class="text-start"><strong>Prepared By</strong></td>
@@ -172,7 +168,7 @@
                 <h6><strong>Pump Type: Vertical Sump Pump As per API 610 (11th Edition)</strong></h6>
             </div>
         </div>
-        <div class="row border-bottom border-3 border-dark">
+        <div class="row border-bottom border-3 border-dark client">
             <div class="col-4" style="border-right: 3px solid black;">
                 <table>
                     <tr>
@@ -259,7 +255,7 @@
                 <h6><strong>MATERIAL OF CONSTRUCTION</strong></h6>
             </div>
         </div>
-        <div class="row border-bottom border-3 border-dark">
+        <div class="row border-bottom border-3 border-dark client">
             <div class="col-4" style="border-right: 3px solid black;">
                 <table>
                     <tr>
@@ -387,7 +383,7 @@
         <div class="row text-center border-bottom border-3 border-dark">
             <h5>MOTOR DETAILS:</h5>
         </div>
-        <div class="row border-bottom border-3 border-dark">
+        <div class="row border-bottom border-3 border-dark client">
             <div class="col-3" style="border-right: 3px solid black;">
                 <tr>
                     <td><strong>Rating KW : 5.5 </strong></td>
@@ -409,7 +405,7 @@
                 </tr>
             </div>
         </div>
-        <div class="row border-bottom-0 border-3 border-dark">
+        <div class="row border-bottom-0 border-3 border-dark client">
             <div class="col-10">
                 <strong>
                     <td>
@@ -428,4 +424,5 @@
                 <h6>Page No.01</h6>
             </div>
         </div>
+    </div>
 </body>
