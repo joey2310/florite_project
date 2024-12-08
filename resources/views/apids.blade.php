@@ -40,7 +40,8 @@
 </head>
 
 <body>
-    <div class=" border border-3 border-end border-dark main-div border border-bottom-0">
+    <div class=" container border border-3 border-end border-dark main-div border border-bottom-0 mt-5"
+        style="--bs-gutter-x: -1.5rem;">
         <div class="row my-5">
             <div class="col-2 text-end">
                 <h6>CLIENT :</h6>
@@ -193,6 +194,12 @@
                 </tbody>
             </table>
         </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class=" container border border-3 border-end border-dark main-div border border-bottom-0"
+        style="--bs-gutter-x: -1.5rem;">
     </div>
 </body>
 
