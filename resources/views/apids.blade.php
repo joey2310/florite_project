@@ -142,7 +142,7 @@
             <h6>APPLICABLE OVERLAY STANDARDS :</h6>
         </div>
         <div style="margin-top:80px;">
-            <table class="table table-bordered border-top border-bottom border-dark border-3 text-center"
+            <table class="table-bordered border-top border-bottom border-dark border-3 text-center"
                 style="margin-bottom:-1px;">
                 <tbody>
                     <tr style="height:30px;">
@@ -151,10 +151,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td rowspan="4" style="width:150px "><img src="{{ asset('flo-rite-pumps-logo.jpg') }}"
-                                alt="logo" width="100" height="60"></td>
-                        <td class="border-dark border-1 border-end" rowspan="4" style="width:100px">
-                            <h5>FLORITE ENGINEERING CORPORATION</h5>
+                        <td rowspan="4" style="width:8%">
+                            <img src="{{ asset('flo-rite-pumps-logo.jpg') }}" alt="logo" width="150" height="60">
+                        </td>
+                        <td rowspan="4" class="text-center" style="width:15%">
+                            FLO-RITE ENGINEERING CORPORATION
                         </td>
                     </tr>
                     <tr style="height:30px;">
@@ -165,9 +166,9 @@
                         <td></td>
                     </tr>
                     <tr style="height:20px;">
-                        <td>0</td>
-                        <td style="width:16%">29-11-2024</td>
-                        <td>Datasheet</td>
+                        <td style="width:5%">0</td>
+                        <td style="width:12%">29-11-2024</td>
+                        <td style="width:40%">Datasheet</td>
                         <td style="width:5%">P.B</td>
                         <td style="width:5%">G.A</td>
                     </tr>
@@ -200,6 +201,53 @@
     <br>
     <div class=" container border border-3 border-end border-dark main-div border border-bottom-0"
         style="--bs-gutter-x: -1.5rem;">
+        <div>
+            <table class="text-center table-bordered border-dark border-3">
+                <tbody>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td style="width:6%">CLIENT</td>
+                        <td>Bharat Petroleum Corporation Limited </td>
+                        <td rowspan="3" style="width:8%">
+                            <img src="{{ asset('flo-rite-pumps-logo.jpg') }}" alt="logo" width="150" height="60">
+                        </td>
+                        <td rowspan="3" class="text-center" style="width:15%">
+                            FLO-RITE ENGINEERING CORPORATION
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="width:8%">PREP.BY</td>
+                        <td style="width:8%">CHKD.BY</td>
+                        <td style="width:8%">APRD.BY</td>
+                        <td rowspan="2"> ADDRESS</td>
+                        <td rowspan="2">BPCL JEWRA TERMINAL</td>
+                    </tr>
+                    <tr>
+                        <td>NAME</td>
+                        <td>P.B</td>
+                        <td>G.A</td>
+                        <td>G.A</td>
+                    </tr>
+                    <tr>
+                        <td>DATE</td>
+                        <td>10-12-2024</td>
+                        <td>10-12-2024</td>
+                        <td>10-12-2024</td>
+                        <td colspan="2" rowspan="2">DATA SHEET FOR VERTICAL SUSPENDED CENTRIFUGAL PUMP (VS4) </td>
+                        <td colspan="4" class="text-start"> REF NO. : -O - 4385 DATE : 29/07/2024 </td>
+                    </tr>
+                    <tr class="text-start">
+                        <td colspan="4">APPROVED</td>
+                        <td colspan="4"> (SHEET 2 OF 7), Rev. 0 </td>
+                    </tr>
+                    <tr class="text-start">
+                        <td colspan="6"></td>
+                        <td colspan="4"> DATA SHEET NO.- V11503220-DT </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 
