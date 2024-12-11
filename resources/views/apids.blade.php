@@ -35,6 +35,10 @@
         .lines {
             font-size: 10px;
         }
+
+        .pg2 {
+            font-size: 7px;
+        }
     }
     </style>
 </head>
@@ -199,8 +203,73 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
     <div class=" container border border-3 border-end border-dark main-div border border-bottom-0"
         style="--bs-gutter-x: -1.5rem;">
+        <div>
+            <table style="font-size:12px">
+                <tbody>
+                    <tr class="pg2">
+                        <td style="width:10%">APPLICABLE TO</td>
+                        <td style="width:43%" colspan="3">: PURCHASE</td>
+                        <td style="width:10%">APPLICABLE STANDARD</td>
+                        <td style="width:45%" colspan="3">: API 610 11th EDITION</td>
+                    </tr>
+                    <tr class="pg2">
+                        <td>FOR</td>
+                        <td colspan="3">: M/s. Bharat Petroleum Corporation Limited</td>
+                        <td>REF NO.</td>
+                        <td>: O - 4385</td>
+                    </tr>
+                    <tr class="pg2">
+                        <td>LOCATION</td>
+                        <td colspan="3">: BPCL JEWRA Terminal</td>
+                        <td>DATE</td>
+                        <td>: 29-07-2024</td>
+                    </tr>
+                    <tr class="pg2">
+                        <td>NO. REQ</td>
+                        <td>: 4 (FOUR)</td>
+                        <td>PUMP SIZE</td>
+                        <td>: 50 X 32 / 200</td>
+                        <td>TYPE</td>
+                        <td>: Vertical Centrifugal Self Pump (As per API 610 - 11th Edition)</td>
+                        <td style="width:20%">No. STAGES : 1 (One)</td>
+                    </tr>
+                    <tr class="pg2">
+                        <td>MANUFACTURER</td>
+                        <td colspan="3">: FLO-RITE ENGINEERING CORPORATION</td>
+                        <td>MODEL</td>
+                        <td>: FVS-N-50 X 32 / 200</td>
+                        <td>SERIAL NO. :</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table class="text-center table-bordered border-dark border-3">
+                <thead>
+                    <tr>
+                        <td colspan="5"> LIQUID CHARACTERISTICS </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> </td>
+                        <td> Units </td>
+                        <td> Maximum </td>
+                        <td> Minimum </td>
+                        <td rowspan="6" style="width:15%"> NOTE : Max & Min values refer only to the proprty listed.</td>
+                        <td rowspan="6" style="width:30%"> SERVICE : PUMPS OPERATE IN CORROSION DUE TO EROSION DUE TO H2S
+                            CONCENTRATION (ppm)</td>
+                    </tr>
+                    <tr>
+                        <td>LIQUID TYPE OR NAME</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div>
             <table class="text-center table-bordered border-dark border-3">
                 <tbody>
