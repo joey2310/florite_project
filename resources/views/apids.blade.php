@@ -44,6 +44,7 @@
 </head>
 
 <body>
+    <!-- Page 1 Start -->
     <div class=" container border border-3 border-end border-dark main-div border border-bottom-0 mt-5"
         style="--bs-gutter-x: -1.5rem;">
         <div class="row my-5">
@@ -200,11 +201,13 @@
             </table>
         </div>
     </div>
+    <!-- Page 1 End -->
     <br>
     <br>
     <br>
     <br>
     <br>
+    <!-- Page 2 Start -->
     <div class=" container border border-3 border-end border-dark main-div border border-bottom-0"
         style="--bs-gutter-x: -1.5rem;">
         <div>
@@ -260,9 +263,11 @@
                         <td style="width:7%"> Units </td>
                         <td style="width:8%"> Maximum </td>
                         <td style="width:8%"> Minimum </td>
-                        <td rowspan="6" style="width:15%"> NOTE : Max & Min values refer only to the proprty listed.
+                        <td rowspan="6" style="width:12%" class="text-start align-top"> NOTE : Max & Min values refer
+                            only to the proprty listed.
                         </td>
-                        <td rowspan="18" style="width:50%"> SERVICE : PUMPS OPERATE IN CORROSION DUE TO EROSION DUE TO
+                        <td rowspan="18" style="width:30%" class="text-start align-top"> SERVICE : PUMPS OPERATE IN
+                            CORROSION DUE TO EROSION DUE TO
                             H2S CONCENTRATION (ppm)</td>
                     </tr>
                     <tr>
@@ -355,6 +360,219 @@
                 </tbody>
             </table>
         </div>
+        <div class="d-flex justify-content-evenly table-bordered border-dark border-1">
+            <div style="width:60%">
+
+            </div>
+            <div style="width:50%">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td style="width:10%" colspan="4">COOLING WATER :</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">INLET</td>
+                            <td rowspan="2" style="width:5%">
+                                <table class="table table-bordered border-dark border-1" style="width:10%">
+                                    <tbody>
+                                        <tr>
+                                            <td>RETURN</td>
+                                            <td>DESIGN</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">TEMP. °C</td>
+                            <td>_____Max</td>
+                        </tr>
+                        <tr>
+                            <td>PRESS.</td>
+                            <td>kg/cm2</td>
+                            <td>_____Min</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="d-flex justify-content-evenly table-bordered border-dark border-1">
+            <div style="width:60%">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" style="width:10%" class="text-center table-bordered border-dark border-1">
+                                PERFORMANCE</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">PROPOSAL CURVE NO. : FVS-N-50 X 32 / 200 - 2</td>
+                            <td>RPM : 2900</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">As Tested Curve No. : FVS-N-50 X 32 / 200 - 2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">IMPELLER DIA</td>
+                            <td colspan="1"> RATED : 190 mm</td>
+                            <td colspan="2"> MAX : 210 mm</td>
+                            <td colspan="2"> Min : 160 mm</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">RATED POWER : 3.0 KW</td>
+                            <td colspan="2">EFFICIENCY (%) : 37</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">RATED CURVE BEP FLOW (at rated impeller dia)</td>
+                            <td colspan="2">: 10.8 m³/hr</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">MIN FLOW :</td>
+                            <td colspan="1">THERMAL:</td>
+                            <td colspan="1">STABLE</td>
+                            <td colspan="1">: 1.6 m³/hr</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">RATED OPERATING REGION (6.1.11) :</td>
+                            <td colspan="1">8.64</td>
+                            <td colspan="1">11.88</td>
+                            <td colspan="1">m³/hr</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">PREFERRED OPERATING REGION :</td>
+                            <td colspan="1">7.56</td>
+                            <td colspan="1">12.96</td>
+                            <td colspan="1">m³/hr</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">MAX HEAD @ RATED IMPELLER</td>
+                            <td colspan="3">: 57 m</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">MAX POWER @ RATED IMPELLER (6.8.9)</td>
+                            <td colspan="3">:3.71 KW</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">NPSHR AT RATED FLOW</td>
+                            <td colspan="3">: 1.4 m</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">CL PUMP TO U/S BASEPLATE</td>
+                            <td colspan="3">: NA</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">NPSH MARGIN AT RATED FLOW</td>
+                            <td colspan="3">: -</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">SPECIFIC SPEED (6.1.9)</td>
+                            <td colspan="3">: 507</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">SUCTION SPECIFIC SPEED LIMIT</td>
+                            <td colspan="3">: 15100</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">SUCTION SPECIFIC SPEED</td>
+                            <td colspan="3">: 7404</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">MAX. ALLOW SOUND PRESS. LEVEL REQD (6.1.14)</td>
+                            <td colspan="3">: 85 (dBA) AT 1 METER</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">EST MAX SOUND PRESS. LEVEL</td>
+                            <td colspan="3">: 83 (dBA)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">MAX. SOUND POWER LEVEL REQ'D (6.1.14)</td>
+                            <td colspan="3">: -</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">EST MAX SOUND POWER LEVEL</td>
+                            <td colspan="3">: -</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="width:50%" class="table-bordered border-dark border-1">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2" style="width:10%" class="text-center table-bordered border-dark border-1">
+                                DRIVER (7.1.5)</td>
+                        </tr>
+                        <tr>
+                            <td>Driver Type</td>
+                            <td>: MOTOR</td>
+                        </tr>
+                        <tr>
+                            <td>GEAR</td>
+                            <td>: NO</td>
+                        </tr>
+                        <tr>
+                            <td>VARIABLE SPEED REQUIRED</td>
+                            <td>: NO</td>
+                        </tr>
+                        <tr>
+                            <td>SOURCE OF VARIABLE SPEED</td>
+                            <td>: NA</td>
+                        </tr>
+                        <tr>
+                            <td>OTHER</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>MANUFACTURER</td>
+                            <td>: CGL/BBL/LHP</td>
+                        </tr>
+                        <tr>
+                            <td>NAME PLATE POWER</td>
+                            <td>: 5.5 KW</td>
+                        </tr>
+                        <tr>
+                            <td>NOMINAL RPM</td>
+                            <td>: 2900</td>
+                        </tr>
+                        <tr>
+                            <td>RATED LAOD RPM FRAME OR MODEL</td>
+                            <td>: 2900</td>
+                        </tr>
+                        <tr>
+                            <td>ORIENTATION</td>
+                            <td>: HORIZONTAL (FLANGE MOUNTED)</td>
+                        </tr>
+                        <tr>
+                            <td>LUBE</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>BEARING TYPE</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bearing DE/ODE</td>
+                            <td>6308-ZZ/6308-ZZ</td>
+                        </tr>
+                        <tr>
+                            <td>STARTING METHOD</td>
+                            <td>: STARTING WILL BE DOL</td>
+                        </tr>
+                        <tr>
+                            <td>SEE DRIVER DATA SHEET</td>
+                            <td>: Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <div>
             <table class="text-center table-bordered border-dark border-3">
                 <tbody>
@@ -403,6 +621,7 @@
             </table>
         </div>
     </div>
+    <!-- Page 2 End -->
 </body>
 
 </html>
