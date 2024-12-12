@@ -256,16 +256,101 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td> </td>
-                        <td> Units </td>
-                        <td> Maximum </td>
-                        <td> Minimum </td>
-                        <td rowspan="6" style="width:15%"> NOTE : Max & Min values refer only to the proprty listed.</td>
-                        <td rowspan="6" style="width:30%"> SERVICE : PUMPS OPERATE IN CORROSION DUE TO EROSION DUE TO H2S
-                            CONCENTRATION (ppm)</td>
+                        <td style="width:20%"> </td>
+                        <td style="width:7%"> Units </td>
+                        <td style="width:8%"> Maximum </td>
+                        <td style="width:8%"> Minimum </td>
+                        <td rowspan="6" style="width:15%"> NOTE : Max & Min values refer only to the proprty listed.
+                        </td>
+                        <td rowspan="18" style="width:50%"> SERVICE : PUMPS OPERATE IN CORROSION DUE TO EROSION DUE TO
+                            H2S CONCENTRATION (ppm)</td>
                     </tr>
                     <tr>
-                        <td>LIQUID TYPE OR NAME</td>
+                        <td class="text-end">LIQUID TYPE OR NAME</td>
+                        <td></td>
+                        <td colspan="2">SLOP</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">VAPOR PRESSURE</td>
+                        <td>kg/cm2</td>
+                        <td colspan="2">0.90</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">RELATIVE DENSITY</td>
+                        <td>kg/dm3</td>
+                        <td colspan="2">0.795</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">SPECIFIC HEAT</td>
+                        <td>kJ/(kg-K)</td>
+                        <td colspan="2">2.09</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">KINEMATIC VISCOSITY</td>
+                        <td>CST @ 40°C</td>
+                        <td colspan="2">1.5</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">OPERATING CONDITIONS (6.1.2)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Units</td>
+                        <td colspan="3">Rated</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">NPSHa Datum</td>
+                        <td></td>
+                        <td colspan="3">C.L. Impeller</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">PUMPING TEMPERATURE</td>
+                        <td>°C</td>
+                        <td colspan="3">40</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">FLOW</td>
+                        <td>m³/hr/LPM</td>
+                        <td colspan="2">10</td>
+                        <td colspan="1">167</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">DISCHARGE PRESSURE : (6.3.2)</td>
+                        <td>kg/cm2A</td>
+                        <td colspan="3">4.31</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">SUCTION PRESSURE</td>
+                        <td>kg/cm2A</td>
+                        <td colspan="3">0.34</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">DIFFERENTIAL PRESSURE</td>
+                        <td>kg/cm2A</td>
+                        <td colspan="3">3.97</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">DIFFERENTIAL HEAD</td>
+                        <td>m</td>
+                        <td colspan="3">50</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">DISCHARGE HEAD</td>
+                        <td>m</td>
+                        <td colspan="3">54.28</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">NPSHA</td>
+                        <td>m</td>
+                        <td colspan="3">FLOODED</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">HYDRAULIC POWER</td>
+                        <td>KW</td>
+                        <td colspan="3">1.08</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">SITE AND UTILITY DATA</td>
                     </tr>
                 </tbody>
             </table>
