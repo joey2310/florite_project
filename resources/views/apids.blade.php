@@ -462,7 +462,7 @@
                             <td style="width:10%" colspan="4">COOLING WATER :</td>
                         </tr>
                         <tr>
-                            <td colspan="4">INLET</td>
+                            <td colspan="5">INLET</td>
                             <td rowspan="2" style="width:5%">
                                 <table class="table table-bordered border-dark border-1" style="width:10%">
                                     <tbody>
@@ -492,11 +492,11 @@
                             <td>_____Min</td>
                         </tr>
                         <tr>
-                            <td colspan="4">COOLING WATER CHLORIDE CONCENTRATION:</td>
+                            <td colspan="5">COOLING WATER CHLORIDE CONCENTRATION:</td>
                             <td>ppm</td>
                         </tr>
                         <tr>
-                            <td>INSTRUMENT AIR :</td>
+                            <td colspan="3">INSTRUMENT AIR :</td>
                             <td>MAX</td>
                             <td> kg/cm2 A</td>
                             <td>MIN</td>
@@ -506,9 +506,13 @@
                             <td>STEAM</td>
                         </tr>
                         <tr>
-                            <td colspan="2">TEMP.</td>
-                            <td colspan="2">°C</td>
-                            <td class="text-end" colspan="2">Max</td>
+                            <td></td>
+                            
+                        </tr>
+                        <tr>
+                            <td colspan="">TEMP.</td>
+                            <td>°C</td>
+                            <td class="text-end pe-5" colspan="3">Max</td>
                             <td rowspan="5" style="width:5%">
                                 <table class="table table-bordered border-dark border-1" style="width:10%">
                                     <tbody>
@@ -537,15 +541,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="text-end" colspan="4">Min</td>
+                            <td class="text-end pe-5" colspan="5">Min</td>
                         </tr>
                         <tr>
                             <td>PRESS.</td>
                             <td>kg/cm2</td>
-                            <td class="text-end">Max</td>
+                            <td class="text-end pe-5" colspan="3">Max</td>
                         </tr>
                         <tr>
-                            <td class="text-end" colspan="4">Min</td>
+                            <td class="text-end pe-5" colspan="5">Min</td>
                         </tr>
                     </tbody>
                 </table>
