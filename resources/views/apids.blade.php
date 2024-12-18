@@ -251,7 +251,7 @@
             </table>
         </div>
         <div>
-            <table class="text-center table-bordered border-dark border-3">
+            <table class="text-center table-bordered border-dark border-3 ">
                 <thead>
                     <tr>
                         <td colspan="5"> LIQUID CHARACTERISTICS </td>
@@ -360,7 +360,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="d-flex justify-content-evenly table-bordered border-dark border-1" style="font-size:15px;">
+        <div class="d-flex justify-content-evenly table-bordered border-dark border-1 pg2">
             <div style="width:60%">
                 <table style="width:100%">
                     <tbody>
@@ -463,7 +463,7 @@
                         </tr>
                         <tr>
                             <td colspan="4">INLET</td>
-                            <td rowspan="3" style="width:5%">
+                            <td rowspan="2" style="width:5%">
                                 <table class="table table-bordered border-dark border-1" style="width:10%">
                                     <tbody>
                                         <tr>
@@ -492,11 +492,11 @@
                             <td>_____Min</td>
                         </tr>
                         <tr>
-                            <td colspan="5">COOLING WATER CHLORIDE CONCENTRATION:</td>
+                            <td colspan="4">COOLING WATER CHLORIDE CONCENTRATION:</td>
                             <td>ppm</td>
                         </tr>
                         <tr>
-                            <td colspan="4">INSTRUMENT AIR :</td>
+                            <td>INSTRUMENT AIR :</td>
                             <td>MAX</td>
                             <td> kg/cm2 A</td>
                             <td>MIN</td>
@@ -508,7 +508,7 @@
                         <tr>
                             <td colspan="2">TEMP.</td>
                             <td colspan="2">°C</td>
-                            <td class="text-end">Max</td>
+                            <td class="text-end" colspan="2">Max</td>
                             <td rowspan="5" style="width:5%">
                                 <table class="table table-bordered border-dark border-1" style="width:10%">
                                     <tbody>
@@ -537,15 +537,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="text-end" colspan="5">Min</td>
+                            <td class="text-end" colspan="4">Min</td>
                         </tr>
                         <tr>
-                            <td colspan="2">PRESS.</td>
-                            <td colspan="2">kg/cm2</td>
+                            <td>PRESS.</td>
+                            <td>kg/cm2</td>
                             <td class="text-end">Max</td>
                         </tr>
                         <tr>
-                            <td class="text-end" colspan="5">Min</td>
+                            <td class="text-end" colspan="4">Min</td>
                         </tr>
                     </tbody>
                 </table>
