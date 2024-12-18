@@ -360,9 +360,100 @@
                 </tbody>
             </table>
         </div>
-        <div class="d-flex justify-content-evenly table-bordered border-dark border-1">
+        <div class="d-flex justify-content-evenly table-bordered border-dark border-1" style="font-size:15px;">
             <div style="width:60%">
-
+                <table style="width:100%">
+                    <tbody>
+                        <tr>
+                            <td>LOCATION</td>
+                        </tr>
+                        <tr>
+                            <td>OUTDOOR</td>
+                            <td>UNHEATED</td>
+                            <td>SUN</td>
+                        </tr>
+                        <tr>
+                            <td>MOUNTED AT</td>
+                            <td>BASEPLATE</td>
+                            <td>TROPICALISTATION REQD</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">ELECTRIC AREA CLASSIFICATION</td>
+                            <td>6.1.22 ZONE ZONE-1/2</td>
+                        </tr>
+                        <tr>
+                            <td>GROUP</td>
+                            <td>II A & B __________</td>
+                            <td>TEMP CLASS T3</td>
+                        </tr>
+                        <tr>
+                            <td>SITE DATA :</td>
+                        </tr>
+                        <tr>
+                            <td>ELEVATION (MSL) :</td>
+                            <td>__________ M</td>
+                            <td>BAROMETER : __________ mmHg</td>
+                            <td>RANGE OF AMBIENT</td>
+                        </tr>
+                        <tr>
+                            <td>TEMPS:MIN / MAX</td>
+                            <td>5 / 50 °C</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">RELATIVE HUMIDITY: MIN / MAX</td>
+                            <td>___________ / __________ %</td>
+                        </tr>
+                        <tr>
+                            <td>UNUSUAL CONDITIONS</td>
+                            <td>__________</td>
+                        </tr>
+                        <tr>
+                            <td>UTILITY CONDITIONS</td>
+                        </tr>
+                        <tr>
+                            <td>ELECTRICITY :</td>
+                            <td colspan="2" rowspan="4">
+                                <table class="table table-bordered border-dark border-1">
+                                    <tbody>
+                                        <tr>
+                                            <td>DRIVERS</td>
+                                            <td>HEATING</td>
+                                            <td>CONTROL</td>
+                                            <td>SHUTDOWN</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>VOLTAGE</td>
+                        </tr>
+                        <tr>
+                            <td>PHASE</td>
+                        </tr>
+                        <tr>
+                            <td>HERTZ</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div style="width:50%">
                 <table>
@@ -372,7 +463,7 @@
                         </tr>
                         <tr>
                             <td colspan="4">INLET</td>
-                            <td rowspan="2" style="width:5%">
+                            <td rowspan="3" style="width:5%">
                                 <table class="table table-bordered border-dark border-1" style="width:10%">
                                     <tbody>
                                         <tr>
@@ -399,6 +490,62 @@
                             <td>PRESS.</td>
                             <td>kg/cm2</td>
                             <td>_____Min</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">COOLING WATER CHLORIDE CONCENTRATION:</td>
+                            <td>ppm</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">INSTRUMENT AIR :</td>
+                            <td>MAX</td>
+                            <td> kg/cm2 A</td>
+                            <td>MIN</td>
+                            <td> kg/cm2 A</td>
+                        </tr>
+                        <tr>
+                            <td>STEAM</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">TEMP.</td>
+                            <td colspan="2">°C</td>
+                            <td class="text-end">Max</td>
+                            <td rowspan="5" style="width:5%">
+                                <table class="table table-bordered border-dark border-1" style="width:10%">
+                                    <tbody>
+                                        <tr>
+                                            <td>DRIVERS</td>
+                                            <td>HEATING</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-end" colspan="5">Min</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">PRESS.</td>
+                            <td colspan="2">kg/cm2</td>
+                            <td class="text-end">Max</td>
+                        </tr>
+                        <tr>
+                            <td class="text-end" colspan="5">Min</td>
                         </tr>
                     </tbody>
                 </table>
