@@ -57,8 +57,8 @@
                         <h6>DATE</h6>
                     </td>
                 </tr>
-                <td>
-                    <h6>FVS-N-75 x 65 x 315</h6>
+                <td style="width:40%">
+                    <h6>{{ $performancedata->pumpModel}}</h6>
                 </td>
                 <td>
                     <h6>75</h6>
@@ -70,7 +70,7 @@
                     <h6>2900</h6>
                 </td>
                 <td>
-                    <h6>29/04/2024</h6>
+                    <h6>{{ $performancedata->q1pDate}}</h6>
                 </td>
             </table>
             <div class="d-flex m-1 text-center">
@@ -86,7 +86,7 @@
                             <h6 class="text-center">Customer</h6>
                         </td>
                         <td colspan="3">
-                            <h6 class="ps-1">Bharat Petroleum Corporation Limited</h6>
+                            <h6 class="ps-1">{{ $performancedata->clientName}}</h6>
                         </td>
                         <td colspan="3">
                         </td>
@@ -94,7 +94,7 @@
                             <h6 class="text-center">Liquid</h6>
                         </td>
                         <td style="width:11%" colspan="2">
-                            <h6 class="text-center">MS / HSD / SKO</h6>
+                            <h6 class="text-center">{{ $performancedata->liquid}}</h6>
                         </td>
                     </tr>
                     <tr>
@@ -102,7 +102,7 @@
                             <h6 class="text-center">Location</h6>
                         </td>
                         <td colspan="3">
-                            <h6 class="ps-1">Hyderabad</h6>
+                            <h6 class="ps-1">{{ $performancedata->location}}</h6>
                         </td>
                         <td colspan="3">
                         </td>
@@ -110,7 +110,7 @@
                             <h6 class="text-center">Specific Gravity</h6>
                         </td>
                         <td colspan="2">
-                            <h6 class="text-center">0.795</h6>
+                            <h6 class="text-center">{{ $performancedata->spGr}}</h6>
                         </td>
                     </tr>
                     <tr>
@@ -118,7 +118,7 @@
                             <h6 class="text-center">Ref No.</h6>
                         </td>
                         <td colspan="3">
-                            <h6 class="ps-1">Q1P - 4411</h6>
+                            <h6 class="ps-1">{{ $performancedata->q1p}}</h6>
                         </td>
                         <td colspan="3">
                         </td>
@@ -134,7 +134,7 @@
                             <h6 class="text-center">Date</h6>
                         </td>
                         <td colspan="3">
-                            <h6 class="ps-1">25-12-2024</h6>
+                            <h6 class="ps-1">{{ $performancedata->q1pDate}}</h6>
                         </td>
                         <td colspan="3">
                         </td>
@@ -152,14 +152,14 @@
                         <td>
                             <h6 class="text-center">Speed (RPM)</h6>
                         </td>
-                        <td>
+                        <td style="width:15%">
                             <h6 class="text-center">Frequency (HZ)</h6>
                         </td>
-                        <td colspan="2">
+                        <td style="width:20%" colspan="2">
                             <h6 class="text-center">Pump Model:</h6>
                         </td>
-                        <td colspan="3">
-                            <h6 class="text-center">FCH-N-CS 250 x 200 x 500</h6>
+                        <td style="width:30%" colspan="3">
+                            <h6 class="text-center">{{ $performancedata->pumpModel}}</h6>
                         </td>
                         <td>
                             <h6 class="text-center">Solid Size</h6>
@@ -182,13 +182,13 @@
                             <h6 class="text-center">Flow</h6>
                         </td>
                         <td>
-                            <h6 class="text-center">167 LPM</h6>
+                            <h6 class="text-center">{{ $performancedata->capacity}} LPM</h6>
                         </td>
                         <td>
                             <h6 class="text-center">Head</h6>
                         </td>
                         <td>
-                            <h6 class="text-center">50 m</h6>
+                            <h6 class="text-center">{{ $performancedata->head}} m</h6>
                         </td>
                         <td>
                             <h6 class="text-center">Stage - 1</h6>
@@ -205,22 +205,22 @@
             <table class="table-bordered border-dark border-3" style=" width:100%">
                 <tbody>
                     <tr>
-                        <td>
+                        <td style="width:15%">
                             <h6 class="text-center">Pump Input</h6>
                         </td>
-                        <td>
-                            <h6 class="text-center">3.0 KW</h6>
+                        <td style="width:10%">
+                            <h6 class="text-center"> {{ round($performancedata->abpower, 1) }} KW</h6>
                         </td>
-                        <td>
+                        <td style="width:15%">
                             <h6 class="text-center">NPSHA</h6>
                         </td>
-                        <td>
-                            <h6 class="text-center">Flooded</h6>
+                        <td style="width:10%">
+                            <h6 class="text-center">{{ $performancedata->npsha}}</h6>
                         </td>
-                        <td>
+                        <td style="width:15%">
                             <h6 class="text-center">Size</h6>
                         </td>
-                        <td>
+                        <td style="width:16%">
                             <h6 class="text-center">Pump Nozzle</h6>
                         </td>
                         <td>
@@ -238,7 +238,7 @@
                             <h6 class="text-center">NPSHR</h6>
                         </td>
                         <td>
-                            <h6 class="text-center">1.4 m</h6>
+                            <h6 class="text-center">{{ $performancedata->npshr}} m</h6>
                         </td>
                         <td>
                             <h6 class="text-center">Suction (mm)</h6>
@@ -255,13 +255,13 @@
                             <h6 class="text-center">Efficiency (%)</h6>
                         </td>
                         <td>
-                            <h6 class="text-center">37%</h6>
+                            <h6 class="text-center">{{ $performancedata->eff}}%</h6>
                         </td>
                         <td>
                             <h6 class="text-center">Shut off Head</h6>
                         </td>
                         <td>
-                            <h6 class="text-center">57m</h6>
+                            <h6 class="text-center">{{ round($performancedata->head * 1.14, 0) }} m</h6>
                         </td>
                         <td>
                             <h6 class="text-center">Discharge (mm)</h6>
@@ -283,20 +283,20 @@
             <table class="table-bordered border-dark border-3" style="width:100%">
                 <tbody>
                     <tr>
-                        <td class="ps-3">
+                        <td style="width:60%" class="ps-3">
                             <h6>1. Pump Performance with : ISO-9906-GRII</h6>
                         </td>
-                        <td class="text-center">
+                        <td style="width:10%" class="text-center">
                             <h6>DRN BY.</h6>
                         </td>
-                        <td class="text-center">
-                            <h6>P.B</h6>
+                        <td style="width:5%" class="text-center">
+                            <h6>{{ $performancedata->prepby}}</h6>
                         </td>
-                        <td class="text-center">
+                        <td style="width:10%" class="text-center">
                             <h6>DATE</h6>
                         </td>
                         <td class="text-center">
-                            <h6>25-12-2024</h6>
+                            <h6>{{ $performancedata->q1pDate}}</h6>
                         </td>
                     </tr>
                     <tr>
@@ -307,13 +307,13 @@
                             <h6>CHKD BY.</h6>
                         </td>
                         <td class="text-center">
-                            <h6>G.A</h6>
+                            <h6>{{ $performancedata->appby}}</h6>
                         </td>
                         <td class="text-center">
                             <h6>DATE</h6>
                         </td>
                         <td class="text-center">
-                            <h6>25-12-2024</h6>
+                            <h6>{{ $performancedata->q1pDate}}</h6>
                         </td>
                     </tr>
                 </tbody>
